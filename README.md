@@ -1,2 +1,4 @@
 # CSS_Exercises
-css excercises
+CSS Exercises
+
+Some CSS snippets

@@ -1,10 +1,14 @@
+<body onload="myFunction()" style="margin:0;">
+
 <div class="outer">
-<div class="bouncing-loader">
+<div id="bouncing-loader">
   <div></div>
   <div></div>
   <div></div>
 </div>
 </div>
+
+<div style="display:none"; id="myDiv"><h2>Hereeeeeee's Content</h2></div>
 <style type="text/css">
 @keyframes bouncing-loader {
   from {
@@ -28,15 +32,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-.bouncing-loader {
+
+#bouncing-loader {
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
 
-.bouncing-loader > div {
+#bouncing-loader > div {
   width: 1rem;
   height: 1rem;
   margin: 3rem 0.2 rem;
@@ -45,11 +48,32 @@ body {
   animation: bouncing-loader 0.6s infinite alternate;
 }
 
-.bouncing-loader > div:nth-child(2){
+#bouncing-loader > div:nth-child(2){
   animation-delay: 0.2s;
 }
 
-.bouncing-loader > div:nth-child(3){
+#bouncing-loader > div:nth-child(3){
   animation-delay: 0.4s;
 }
+
+#myDiv {
+  text-align: center;
+}
+h2{
+  color: #84bbc3;
+}
 </style>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("bouncing-loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
