@@ -1,0 +1,111 @@
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.main {
+	background: #333;
+	height: 65%;
+	width: 75%;
+	padding: 100px;
+}
+
+.minifig_face {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(120 181 150 / 99%); /*rgba(203, 248, 225, 0.99); */
+	flex-direction: column;
+	border: 4px solid black;
+/*	background-image: radial-gradient(rgba(255, 204, 0, 0.99), rgb(253, 245, 192)); */
+}
+
+.eyes_pair {
+	width: 400px;s
+	height: 150px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.eye_socket {
+	width: 375px;
+	height: 125px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.eyes {
+	height: 145px;
+	width: 145px;
+	background: white;
+	border-radius: 100%;
+	border: solid 2px black;
+	margin:-10px 10px 0px 10px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.pupil {
+	width: 5px;
+	height: 100px;
+	margin-top: 5px;
+	background: black;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+/*removed but saving for future characters */
+/*.catchlight {
+	width: 15px;
+	height: 30px;
+	margin-top: 5px;
+	background: black;
+	border-radius: 100%;
+} */
+
+
+.mouth {
+	width: 200px;
+	height: 80px;
+	background: rgb(121 19 19 / 87%);
+	margin-top: 80px;
+	border-radius: 100px;
+	border: 4px solid black;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.fangs {
+	width: 5px;
+	height: 70px;
+	margin-top: -50px;
+	background: #fff;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	border: solid 1px black;
+}
+
+.fangs_bottom {
+	width: 5px;
+	height: 100px;
+	margin-bottom:  -50px;
+	background: #fff;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	border: solid 1px black;
+}
