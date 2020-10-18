@@ -96,7 +96,7 @@ body {
 .leftNostril {
 	border-left: 30px solid transparent;
 	/*border-right: 20px solid transparent; */
-	border-bottom: calc(4 * 20px * 0.8) solid black;
+	border-bottom: calc(4 * 20px * 0.8) solid rgb(0 0 0 / .7);;
 	/*border-top: 20px solid transparent; */
 	display: inline-block;
 	margin-bottom: -70px;
@@ -110,7 +110,7 @@ body {
 .rightNostril {
 	/*border-left: 20px solid transparent; */
 	border-right: 30px solid transparent; 
-	border-bottom: calc(4 * 20px * 0.8) solid black;
+	border-bottom: calc(4 * 20px * 0.8) solid rgb(0 0 0 / .7);;
 	/*border-top: 20px solid transparent; */
 	display: inline-block;
 	margin-bottom: -70px;
