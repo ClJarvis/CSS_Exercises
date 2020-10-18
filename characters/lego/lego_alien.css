@@ -20,7 +20,7 @@ body {
 	background: rgba(83 140 111 / 99%); /* rgba(120 181 150 / 99%); */
 	flex-direction: column;
 	border: 4px solid black;
-	background-image: radial-gradient(rgba(255, 204, 0, 0.01), rgb(253, 245, 192)); 
+	background-image: url(fish-net-14.png), radial-gradient(rgba(255, 204, 0, 0.01), rgb(253, 245, 192)); 
 
 }
 
