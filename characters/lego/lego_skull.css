@@ -1,0 +1,155 @@
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.main {
+	background: #333;
+	height: 65%;
+	width: 75%;
+	padding: 100px;
+}
+
+.minifig_face {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(247 247 247 / 99%); /* rgba(120 181 150 / 99%); */
+	flex-direction: column;
+	border: 4px solid black;
+/*	background-image: radial-gradient(rgba(255, 204, 0, 0.01), rgb(253, 245, 192)); */
+
+}
+
+.eyes_pair {
+	width: 400px;
+	height: 150px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.eye_socket {
+	width: 375px;
+	height: 125px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.eyes {
+	height: 145px;
+	width: 145px;
+	background: rgb(26 23 23);
+	border-radius: 100%;
+	border: solid 4px black;
+	margin:-10px 10px 0px 10px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+/*.outerpupil {
+	width: 25px;
+	height: 120px;
+	margin-top: 5px;
+	background: rgb(152 25 25);
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+} */
+
+.pupil {
+	width: 50px;
+	height: 50px;
+	margin-top: 50px;
+	background: red;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.catchlight {
+	width: 4px;
+	height: 4px;
+	margin-top: 25px;
+	background: rgb(26 23 23);
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+} 
+
+
+.nose_pair {
+	
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.leftNostril {
+	border-left: 30px solid transparent;
+	/*border-right: 20px solid transparent; */
+	border-bottom: calc(4 * 20px * 0.8) solid rgb(0 0 0 / .5);;
+	/*border-top: 20px solid transparent; */
+	display: inline-block;
+	margin-bottom: -70px;
+}
+
+.bridge {
+	width: 2px;
+}
+
+
+.rightNostril {
+	/*border-left: 20px solid transparent; */
+	border-right: 30px solid transparent; 
+	border-bottom: calc(4 * 20px * 0.8) solid rgb(0 0 0 / .5);;
+	/*border-top: 20px solid transparent; */
+	display: inline-block;
+	margin-bottom: -70px;
+}
+
+.mouth {
+	width: 200px;
+	height: 80px;
+	background: rgb(51 51 51);
+	margin-top: 90px;
+	border-radius: 100px;
+	border: 4px solid black;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.fangs {
+	width: 5px;
+	height: 65px;
+	margin-top: -50px;
+	background: #fff;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	border: solid 1px black; 
+}
+
+.fangs_bottom {
+	width: 7px;
+	height: 100px;
+	margin-bottom:  -50px;
+	background: #fff;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	border: solid 1px black;
+}
