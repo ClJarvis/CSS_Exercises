@@ -121,7 +121,7 @@ body {
 	margin-bottom: -28px;
 }
 
-.mouth {
+/*.mouth {
 	width: 140px;
 	height: 10px;
 	background: rgb(26 23 23);
@@ -132,7 +132,21 @@ body {
 	align-items: center;
 	position: relative;
 	overflow: visible;
+} */
+
+ .mouth {
+	height: 195px;
+	width: 145px;
+	background: #FFF8E1;
+	border-radius: 100%;
+	border: double 4px black;
+	margin: 30px 10px 0px 10px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
 }
+
 
 .fangs {
 	width: 10px;
