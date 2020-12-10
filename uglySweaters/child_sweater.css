@@ -22,7 +22,7 @@ body {
 
 /* SWEATER SWEATER     ////// */
 
- .sweater {
+.sweater {
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -54,9 +54,9 @@ body {
 
 
 .stitch {
-	border: 2px dashed black;
-	border-right: 1px dashed black;
-	border-left: 1px dashed black;
+	border: 2px dashed white;
+	border-right: 1px dashed white;
+	border-left: 1px dashed white;
 	height: 30px;
 	width: 10%;
 	display: flex;
@@ -79,7 +79,7 @@ body {
 
 .redStitch {
 	background-color: red;
-	border: 2px dotted black;
+	border: 2px dotted white;
 	height: 10px;
 	width: 10%;
 	display: flex;
@@ -89,7 +89,7 @@ body {
 
 .transpStitch {
 	background-color: #3d8425;
-	border: 2px dotted black;
+	border: 2px dotted white;
 	height: 10px;
 	width: 10%;
 	display: flex;
@@ -109,16 +109,32 @@ body {
 }
 
 .childRobe {
-	background-color: tan;
+	background-color: #d7bfa6;
 	height: 40px;
 	width: 88px;
+	margin-top: -70px;
+	margin-right: -108px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.childRobeCollar {
+	background-color: #d7bfa6;
+	height: 50px;
+	width: 88px;
+	margin-top: -90px;
+	margin-right: -88px;
+	border-top-left-radius: 34%;
+	border-top-right-radius: 34%;
+
 }
 
 .childHands {
-	background-color: sandgreen;
-	height: 4px;
-	width: 4px;
-	
+	background-color: #88af90;
+    height: 14px;
+    width: 20px;
+    margin-top: 6px;
 }
 
 .cradleBody {
