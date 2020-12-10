@@ -20,6 +20,8 @@ body {
   width: 100%;
 }
 
+/* SWEATER SWEATER     ////// */
+
  .sweater {
 	height: 100%;
 	width: 100%;
@@ -74,6 +76,30 @@ body {
 
 }
 
+
+.redStitch {
+	background-color: red;
+	border: 2px dotted black;
+	height: 10px;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.transpStitch {
+	background-color: #3d8425;
+	border: 2px dotted black;
+	height: 10px;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+
+/* CHARACTER    //////////////// */
+
 .droid {
 	display: flex;
 	justify-content: center;
@@ -82,31 +108,45 @@ body {
 	overflow: visible;
 }
 
+.childRobe {
+	background-color: tan;
+	height: 40px;
+	width: 88px;
+}
+
+.childHands {
+	background-color: sandgreen;
+	height: 4px;
+	width: 4px;
+	
+}
+
 .cradleBody {
 	background-color: white;
-	height: 80px;
+	height: 50px;
 	width: 120px;
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
-	border-bottom-left-radius: 70%;
-	border-bottom-right-radius: 70%;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center; 
 	border: 2px solid black;
 	border-top: 0;
-
+	overflow: visible;
+	flex-direction: column;
 }
 
 .cradleLip {
 	background-color: white;
 	height: 10px;
-	width: 148px;
+	width: 128px;
 	border: 2px solid black;
-	margin-top: -64px;
-	margin-left: -148px;
+	margin-top: -66px;
+	
 }
-/*
+
 .droid_head {
 	background-color: white;
 	position: absolute;
@@ -136,28 +176,11 @@ body {
 .droid_block {
 	background-color: orange;
 	height: 14px;
-	width: 6px;
+	width: 600px;
 	margin-top: 12px;
 	margin-left: 6px;
 }
 
- */
+ 
 
-.redStitch {
-	background-color: red;
-	border: 2px dotted black;
-	height: 10px;
-	width: 10%;
-	display: flex;
-	justify-content: center;
-	align-items: center; 
-}
-.transpStitch {
-	background-color: #3d8425;
-	border: 2px dotted black;
-	height: 10px;
-	width: 10%;
-	display: flex;
-	justify-content: center;
-	align-items: center; 
-}
+
