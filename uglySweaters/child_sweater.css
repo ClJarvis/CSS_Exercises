@@ -107,6 +107,7 @@ body {
 	position: absolute; 
 	overflow: visible;
 	margin-top: 100px;
+	filter: drop-shadow(0 0 1.5rem white);
 }
 
 .childRobe {
@@ -168,6 +169,8 @@ body {
 	justify-content: center;
 	align-items: center; 
 }
+
+
 
 .pupil {
 	background-color: white;
