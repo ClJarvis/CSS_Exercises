@@ -29,7 +29,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #3d8425; 
+	background: #1b1414; 
     flex-direction: row;
 
 }
@@ -56,8 +56,8 @@ body {
 
 .stitch {
 	border: 2px dashed cornsilk;
-	border-right: 1px dashed black;
-	border-left: 1px dashed black;
+	border-right: 1px dashed cornsilk;
+	border-left: 1px dashed cornsilk;
 	height: 30px;
 	width: 10%;
 	display: flex;
@@ -80,7 +80,7 @@ body {
 
 .redStitch {
 	background-color: red;
-	border: 2px dotted black;
+	border: 2px dotted cornsilk;
 	height: 10px;
 	width: 10%;
 	display: flex;
@@ -90,7 +90,7 @@ body {
 
 .transpStitch {
 	background-color: #3d8425;
-	border: 2px dotted black;
+	border: 2px dotted cornsilk;
 	height: 10px;
 	width: 10%;
 	display: flex;
@@ -139,13 +139,11 @@ body {
 }
 
 .cradleBody {
-	background-color: white;
-	height: 50px;
-	width: 120px;
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
+	background-color: #635b5b;
+	height: 200px;
+	width: 200px;
+
+	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center; 
@@ -153,6 +151,16 @@ body {
 	border-top: 0;
 	overflow: visible;
 	flex-direction: column;
+}
+
+
+.droid_circle {
+	border: 4px solid #312727;
+	border-radius: 100%;
+	height: 35px;
+	width: 35px;
+	margin-right: 64px;
+	margin-top: 60px; 
 }
 
 .cradleLip {
