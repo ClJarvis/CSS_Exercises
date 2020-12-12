@@ -118,21 +118,17 @@ body {
 	margin-right: -108px;
 	display: flex;
 	justify-content: space-between;
-
-
 }
 
 .childRobeCollar {
 	background-color: #d7bfa6;
-	height: 50px;
-	width: 94px;
+	height: 42px;
+	width: 92px;
 	margin-top: -90px;
 	margin-right: -92px;
 	border-top-left-radius: 34%;
 	border-top-right-radius: 34%;
 	border: 1px solid black;
-
-
 }
 
 .childHands {
@@ -169,7 +165,6 @@ body {
 	justify-content: center;
 	align-items: center; 
 }
-
 
 
 .pupil {
@@ -222,32 +217,42 @@ body {
 	
 }
 
-.droid_head {
+.cradleBack {
 	background-color: white;
 	position: absolute;
-	height: 40px;
-	width: 88px;
+	height: 70px;
+	width: 120px;
 	border-top-right-radius: 70%;
 	border-top-left-radius: 70%;
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
 
-	border-bottom: 5px solid #3d8425;
+	border: 2px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center; 
-	margin-top: -125px;
+	margin-top: -138px;
+    margin-right: 10px;
 	overflow: visible;
+	z-index: -9;
 }
 
-.droid_antenna {
-		background-color: white;
-		height: 50px;
-		width: 8px;
-		margin-left: 12px;
-		margin-top: -20px;
+.innerBack {
+	background-color: #e9e2e2;
+	position: absolute;
+	height: 86px;
+	width: 100px;
+	border-top-right-radius: 70%;
+	border-top-left-radius: 70%;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border: 2px solid black;
+	margin-top: 27px;
+    margin-right: 0px;
 	}
 
+
+/*
 .droid_block {
 	background-color: orange;
 	height: 14px;
@@ -256,6 +261,6 @@ body {
 	margin-left: 6px;
 }
 
- 
+ */
 
 
