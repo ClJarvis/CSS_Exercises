@@ -156,24 +156,72 @@ body {
 	border: 6px dashed #fff;
 	margin-bottom: 80px;
 	justify-content: space-between;
-	z-index: 1;
+	z-index: 0;
+
+
 }
 
 
 .eyes_pair {
-	width: 100px;
-	height: 50px;
+	width: 140px;
+	height: 90px;
 	border-radius: 50%;
 	background: #6eb7d7;
-	margin-right: 0px;
-	margin-top: 10px; 
+	margin-left: -184px;
+    margin-top: -182px; 
 	display: flex;
     position: relative;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-around;
+    overflow: overlay;
 
 }
 
+.WEyes {
+	background-color: black;
+	height: 54px;
+	width: 54px;
+	border-radius: 50%;
+	margin-top: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	border-top-right-radius: 13%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: -38%;
+}
+
+
+.Wpupil {
+	background-color: white;
+	height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    margin-top: -8px;
+    margin-right: -4px;
+}
+
+.nose {
+	position: relative;
+	margin:0 auto;
+    margin-top: -84px;
+    margin-left: -66px;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+    border-top: 37px solid #6eb7d7;
+    height: 0;
+    width: 0;
+}
+.nose:before {
+	border-top: 54px solid white;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 30px solid rgba(0, 0, 0, 0);
+    content: "";
+    left: -50px;
+    margin-top: -74px;
+    margin-left: -46px;
+    position: absolute;
+}
 
 .faceLeft {
 
@@ -214,6 +262,47 @@ body {
 	border-left: 100px solid transparent; 
 	margin-top: 160px;
 	z-index: 0;
+	display: flex;
+	justify-content: space-between;
+
+
 }
 
+.lines {
+	position: relative;
+	margin:0 auto;
+	margin-top: -170px;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+    border-top: 67px solid #6eb7d7;
+    height: 0;
+    width: 0;
+}
+.lines:before {
+	border-top: 54px solid white;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+    content: "";
+    left: -50px;
+    margin-top: -68px;
+    position: absolute;
+}
 
+/*
+.Right, {
+    transform: skew(25deg);
+    border-right: 2px solid red;
+    height: 70px;
+    margin-top: -70px;
+    margin-right: 11px;
+}
+
+.L {
+    transform: skew(25deg);
+    border-right: 2px solid #000000;
+    height: 70px;
+    margin-top: -70px;
+    margin-right: 11px;
+}
+
+*/
