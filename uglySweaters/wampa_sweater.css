@@ -73,8 +73,8 @@ body {
 	background-image:
         url(https://i.imgur.com/uYjnk8N.png),
            url(https://i.imgur.com/iAGD6MA.png),
-           url(https://i.imgur.com/hIJDjbg.png),
-           url("wampa.jpg");
+           url(https://i.imgur.com/hIJDjbg.png);
+          
 
 }
 
@@ -167,13 +167,17 @@ body {
 	height: 90px;
 	border-radius: 50%;
 	background: #6eb7d7;
-	margin-left: -184px;
-    margin-top: -182px; 
+	margin-left: -190px;
+    margin-top: -121px; 
 	display: flex;
     position: relative;
     flex-direction: row-reverse;
-    justify-content: space-around;
     overflow: overlay;
+    z-index: 1;
+
+	border: 4px solid #fff;
+	justify-content: space-between;
+
 
 }
 
@@ -182,7 +186,7 @@ body {
 	height: 54px;
 	width: 54px;
 	border-radius: 50%;
-	margin-top: 8px;
+
 	display: flex;
 	justify-content: center;
 	align-items: center; 
@@ -204,23 +208,26 @@ body {
 .nose {
 	position: relative;
 	margin:0 auto;
-    margin-top: -84px;
-    margin-left: -66px;
+    
     border-left: 50px solid rgba(0, 0, 0, 0);
     border-right: 50px solid rgba(0, 0, 0, 0);
-    border-top: 37px solid #6eb7d7;
+    border-top: 37px solid white;
     height: 0;
     width: 0;
+
+    margin-top: -78px;
+    margin-left: -118px
 }
 .nose:before {
-	border-top: 54px solid white;
+	border-top: 54px solid #6eb7d7;
     border-left: 50px solid rgba(0, 0, 0, 0);
-    border-right: 30px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
     content: "";
-    left: -50px;
-    margin-top: -74px;
-    margin-left: -46px;
+   
+ margin-left: -50px;
+    margin-top: -49px;
     position: absolute;
+    z-index: 68;
 }
 
 .faceLeft {
@@ -260,7 +267,7 @@ body {
 	border-right: 100px solid transparent;
 	border-bottom: 100px solid transparent;
 	border-left: 100px solid transparent; 
-	margin-top: 160px;
+	margin-top: 156px;
 	z-index: 0;
 	display: flex;
 	justify-content: space-between;
@@ -286,6 +293,54 @@ body {
     left: -50px;
     margin-top: -68px;
     position: absolute;
+}
+
+
+.mouth {
+	width: 120px;
+	height: 60px;
+	background: #6eb7d7;
+	margin-top: 90px;
+	border-radius: 100px;
+	border: 4px solid white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	margin-top: -29px;
+    margin-left: -138px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    z-index: 8; 
+    border-bottom-color: #000000;
+        border-left-color: #6eb7d7;
+    border-right-color: #6eb7d7;
+}
+
+.fangs {
+	width: 25px;
+    height: 33px;
+	margin-top: -50px;
+	background: #fff;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	border: solid 1px black;  /* 1 for small 31px for 
+	flame like teeth if white the white looks like teeth. if black the gums stand out and slooks fiery */
+}
+
+.fangs_bottom {
+	width: 25px;
+    height: 33px;
+	margin-bottom:  -50px;
+	background: #fff;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	border: solid 1px black;
 }
 
 /*
