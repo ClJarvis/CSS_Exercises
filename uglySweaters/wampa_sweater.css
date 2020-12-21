@@ -343,6 +343,28 @@ body {
 	border: solid 1px black;
 }
 
+.nostrils {
+	width: 25px;
+    height: 25px;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 50%;
+    margin-top: -90px;
+    margin-left: -63px;
+    z-index: 7;
+    display: flex;
+    justify-content: center;
+}
+
+.nostrilsInside {
+	width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+ 	margin-top: 3px;
+    z-index: 4;
+}
+
 /*
 .Right, {
     transform: skew(25deg);
