@@ -108,6 +108,7 @@ body {
 	align-items: center;
 	position: absolute; 
 	overflow: visible;
+	margin-left: -60px;
 }
 
 .childRobe {
@@ -157,8 +158,6 @@ body {
 	margin-bottom: 80px;
 	justify-content: space-between;
 	z-index: 0;
-
-
 }
 
 
@@ -262,7 +261,6 @@ body {
 }
 
 .beard {
-
 	border-top:100px solid white;
 	border-right: 100px solid transparent;
 	border-bottom: 100px solid transparent;
@@ -271,8 +269,6 @@ body {
 	z-index: 0;
 	display: flex;
 	justify-content: space-between;
-
-
 }
 
 .lines {
@@ -300,9 +296,8 @@ body {
 	width: 120px;
 	height: 60px;
 	background: #6eb7d7;
-	margin-top: 90px;
 	border-radius: 100px;
-	border: 4px solid white;
+	
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -310,12 +305,14 @@ body {
 	overflow: hidden;
 	margin-top: -29px;
     margin-left: -138px;
+
+    border: 4px solid white;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
-    z-index: 8; 
     border-bottom-color: #000000;
-        border-left-color: #6eb7d7;
+    border-left-color: #6eb7d7;
     border-right-color: #6eb7d7;
+    z-index: 8; 
 }
 
 .fangs {
