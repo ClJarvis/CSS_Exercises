@@ -1,4 +1,4 @@
-On Christmas Eve the last door of the LEGO Advent Calendar was opened. It's Darth Vader in a ugly sweater. Darth sweater's shows the Death Star.
+On Christmas Eve the last door of the LEGO Advent Calendar was opened. It's Darth Vader in a Death Star ugly sweater. 
 
 The sweater is red with white desgins. I used a couple shades of red, white, and cornsilk, all the red and white was too jarring.
 
