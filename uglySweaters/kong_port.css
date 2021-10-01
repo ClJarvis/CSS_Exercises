@@ -2,13 +2,13 @@ body {
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
-	color: cornsilk;
+	color: white;
 }
 
 /* https://www.colorschemer.com/css-color-codes/  */
 
 .main {
-	background: rgb(250 250 249);
+	background: rgb(0 0 0);
 	height: 75%;
 	width: 75%;
 	padding: 100px;
@@ -56,10 +56,10 @@ body {
 }
 
 
-.stitch {
-	border: 2px dashed cornsilk;
-	border-right: 1px dashed cornsilk;
-	border-left: 1px dashed cornsilk;
+.stitch{
+	border: 2px dashed white;
+	border-right: 1px dashed white;
+	border-left: 1px dashed white;
 	height: 30px;
 	width: 10%;
 	display: flex;
@@ -67,6 +67,19 @@ body {
 	align-items: center; 
 }
 
+.batLeft {
+  transform: rotate(45deg);
+  font-size: 1.5rem;
+}
+
+.batRight {
+  transform: rotate(145deg);
+  font-size: 1.5rem;
+}
+
+.eyes{
+	font-size: 2rem;
+}
 
 .torso {
 	height: 75%;
@@ -74,10 +87,10 @@ body {
 }
 
 
-.redStitch {
-	background-color: red;
-	border: 2px dotted cornsilk;
-	height: 10px;
+.orangeStitch {
+	background-color: orange;
+	border: 2px dotted black;
+	height: 15px;
 	width: 10%;
 	display: flex;
 	justify-content: center;
@@ -85,9 +98,9 @@ body {
 }
 
 .transpStitch {
-	background-color: #3d8425;
-	border: 2px dotted cornsilk;
-	height: 10px;
+	background-color: white;
+	border: 2px dotted black;
+	height: 15px;
 	width: 10%;
 	display: flex;
 	justify-content: center;
