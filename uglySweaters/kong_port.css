@@ -64,12 +64,23 @@ body {
 	width: 10%;
 	display: flex;
 	justify-content: center;
-	align-items: center; 
+	align-items: center;
+	padding: 4px; 
 }
 
 .batLeft {
   transform: rotate(45deg);
   font-size: 1.5rem;
+}
+
+.batUp {
+  transform: rotate(-90deg);
+  font-size: 2rem;
+}
+
+.batDown {
+  transform: rotate(90deg);
+  font-size: 2rem;
 }
 
 .batRight {
@@ -79,6 +90,7 @@ body {
 
 .eyes{
 	font-size: 2rem;
+	padding-top: 2px;
 }
 
 .torso {
@@ -97,7 +109,7 @@ body {
 	align-items: center; 
 }
 
-.transpStitch {
+.whiteStitch {
 	background-color: white;
 	border: 2px dotted black;
 	height: 15px;
@@ -369,6 +381,10 @@ body {
  	margin-top: 3px;
     z-index: 4;
 }
+
+
+
+
 
 /*
 .Right, {
