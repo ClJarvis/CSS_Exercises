@@ -7,6 +7,11 @@ body {
 
 /* https://www.colorschemer.com/css-color-codes/  */
 
+/* NOTE  if changing for text on sweater change height to 55% remove charcter {margin-left}  */
+h2 {
+font-size: 	7rem;
+font-family: 'Shadows Into Light', cursive;font-family: Shadows+Into+Light&display;
+}
 .main {
 	background: rgb(0 0 0);
 	height: 75%;
