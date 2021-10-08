@@ -10,7 +10,7 @@ body {
 .main {
 	background: rgb(0 0 0);
 	height: 75%;
-	width: 75%;
+	width: 85vw;
 	padding: 100px;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -131,36 +131,9 @@ body {
 	margin-left: -60px;
 }
 
-.childRobe {
-	background-color: #d7bfa6;
-	height: 40px;
-	width: 88px;
-	margin-top: -70px;
-	margin-right: -108px;
-	display: flex;
-	justify-content: space-between;
 
-}
 
-.childRobeCollar {
-	background-color: #d7bfa6;
-	height: 50px;
-	width: 88px;
-	margin-top: -90px;
-	margin-right: -88px;
-	border-top-left-radius: 34%;
-	border-top-right-radius: 34%;
-
-}
-
-.childHands {
-	background-color: #88af90;
-    height: 14px;
-    width: 20px;
-    margin-top: 6px;
-}
-
-.wampa {
+.kong {
 	background-color: #686565;
 	height: 200px;
 	width: 220px;
@@ -205,7 +178,6 @@ body {
 	height: 54px;
 	width: 54px;
 	border-radius: 50%;
-
 	display: flex;
 	justify-content: center;
 	align-items: center; 
@@ -224,61 +196,7 @@ body {
     margin-right: -4px;
 }
 
-.nose {
-	position: relative;
-	margin:0 auto;
-    
-    border-left: 50px solid rgba(0, 0, 0, 0);
-    border-right: 50px solid rgba(0, 0, 0, 0);
-    border-top: 37px solid white;
-    height: 0;
-    width: 0;
 
-    margin-top: -78px;
-    margin-left: -118px
-}
-.nose:before {
-	border-top: 54px solid #6eb7d7;
-    border-left: 50px solid rgba(0, 0, 0, 0);
-    border-right: 50px solid rgba(0, 0, 0, 0);
-    content: "";
-   
- margin-left: -50px;
-    margin-top: -49px;
-    position: absolute;
-    z-index: 68;
-}
-
-.faceLeft {
-
-	position: relative;
-	 display: block;
-	border-radius: 100%;
-	height: 50px;
-	width: 100px;
-	margin-left: -42px;
-    margin-bottom: -30px;
-	background: #A9A9A9;
-  transform: skewY(-25deg);
-  z-index: 1;
-  border: 2px solid red; 
-
-}
-.faceRight {
-	position: relative;
-	
-	border-radius: 100%;
-	height: 50px;
-	width: 100px;
-	margin-right: -50px;
-	margin-top: -30px; 
-	background: #A9A9A9;
-  transform: skewY(25deg);
-  z-index: 3;
-    border: 2px solid green; 
-
-
-}
 
 .beard {
 	border-top:100px #686565;
