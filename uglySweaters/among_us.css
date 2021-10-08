@@ -1,0 +1,197 @@
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+/* https://www.colorschemer.com/css-color-codes/  */
+
+.main {
+	background: rgb(0 0 0);
+	height: 75%;
+	width: 85vw;
+	padding: 100px;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.flex-container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* SWEATER SWEATER     ////// */
+
+ .sweater {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent; 
+    flex-direction: row;
+
+}
+.collar, .base, .redzagtop, .redzagbttm, .toprow, .secndrow  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+.collar, .base {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+.stitch{
+	border: 2px dashed white;
+	border-right: 1px dashed white;
+	border-left: 1px dashed white;
+	height: 30px;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px; 
+}
+
+.batLeft {
+  transform: rotate(45deg);
+  font-size: 1.5rem;
+}
+
+.batUp {
+  transform: rotate(-90deg);
+  font-size: 2rem;
+}
+
+.batDown {
+  transform: rotate(90deg);
+  font-size: 2rem;
+}
+
+.batRight {
+  transform: rotate(145deg);
+  font-size: 1.5rem;
+}
+
+.eyes{
+	font-size: 2rem;
+	padding-top: 2px;
+}
+
+.torso {
+	height: 75%;
+	width: 100%;
+}
+
+
+.orangeStitch {
+	background-color: orange;
+	border: 2px dotted black;
+	height: 15px;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.whiteStitch {
+	background-color: white;
+	border: 2px dotted black;
+	height: 15px;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+
+/* CHARACTER    //////////////// */
+
+.character {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute; 
+	overflow: visible;
+	
+}
+
+
+
+.astros {
+	background-color: #c13725;
+	height: 200px;
+	width: 220px;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	overflow: visible;
+	flex-direction: column;
+
+	border-top-right-radius: 40%;
+	border-top-left-radius: 45%;
+	border-bottom-right-radius: 48%;
+	border-bottom-left-radius: 48%; 
+	border: 6px dashed #c13725;
+	margin-bottom: 80px;
+	justify-content: space-between;
+	z-index: 0;
+	margin-left: 10px; 
+}
+
+.red {
+	background-color: #c13725;
+	border: 6px dashed #c13725;
+}
+.blue {
+	background-color: royalblue;
+	border: 6px dashed royalblue;
+}
+.yellow {
+	background-color: yellow;
+	border: 6px dashed yellow;
+}
+.green {
+	background-color: green;
+	border: 6px dashed green;
+}
+
+.purple {
+	background-color: rebeccapurple;
+	border: 6px dashed rebeccapurple;
+}
+
+
+.visor {
+	width: 140px;
+	height: 75px;
+	border-radius: 20%;
+	background: #74d5eb;
+	margin-left: 0px;
+    margin-top: 20px; 
+	display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    overflow: overlay;
+    z-index: 1;
+
+	border: 8px solid black;
+	justify-content: space-between;
+
+
+}
