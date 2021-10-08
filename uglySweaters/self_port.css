@@ -246,15 +246,27 @@ body {
 	margin-right: -50px;
 	margin-top: -30px; 
 	background: #fae8b9;
-  transform: skewY(25deg);
-  z-index: 3;
+    transform: skewY(25deg);
+    z-index: 3;
     border: 2px solid green; 
 
 
 }
 
-.beard {
-	border-top:100px #bca66d;
+
+.hairoutline:before edit broswer{
+    border-bottom: 284px solid #ffc107a3;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+    content: "";
+    left: 20;
+    margin-top: -300px;
+    position: absolute;
+}
+
+
+.hair {
+	border-bottom: :100px #bca66d;
 	border-right: 100px solid transparent;
 	border-bottom: 100px solid transparent;
 	border-left: 100px solid transparent; 
@@ -264,18 +276,18 @@ body {
 	justify-content: space-between;
 }
 
-.lines {
+.hairtoutline {
 	position: relative;
 	margin:0 auto;
-	margin-top: -170px;
+	margin-bottom: -80px;
     border-left: 50px solid rgba(0, 0, 0, 0);
     border-right: 50px solid rgba(0, 0, 0, 0);
-    border-top: 67px solid #000;
+    border-top: -67px solid #000;
     height: 0;
     width: 0;
 }
-.lines:before {
-	border-top: 54px solid white;
+.hairoutline:before {
+	border-bottom: 54px solid #ffc107a3;
     border-left: 50px solid rgba(0, 0, 0, 0);
     border-right: 50px solid rgba(0, 0, 0, 0);
     content: "";
@@ -285,9 +297,42 @@ body {
 }
 
 
+
+.beard {
+	border-top: 100px #d4b054;  /* #bca66d; */
+	border-right: 100px solid transparent;
+	border-bottom: 100px solid transparent;
+	border-left: 100px solid transparent; 
+	margin-top: -28px;
+	z-index: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.lines {
+	position: relative;
+	margin:0 auto;
+	margin-top: 80px;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+    border-top: 67px solid #000;
+    height: 0;
+    width: 0;
+}
+.lines:before {
+	border-top: 164px solid #d4b054; /*#ffc107a3; */
+    border-left: 124px solid rgba(0, 0, 0, 0);
+    border-right: 124px solid rgba(0, 0, 0, 0);
+    content: "";
+    left: -124px;
+    margin-top: -100px;
+    position: absolute;
+}
+
+
 .mouth {
-	width: 120px;
-	height: 60px;
+	width: 128px;
+	height: 36px;
 	background: #a71345; 
 	border-radius: 100px;
 	
@@ -296,15 +341,12 @@ body {
 	align-items: center;
 	position: relative;
 	overflow: hidden;
-	margin-top: -29px;
     margin-left: -138px;
 
-    border: 4px solid white;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
-    border-bottom-color: #000000;
-    border-left-color:  #bca66d;
-    border-right-color:  #bca66d;
+    border: 4px solid #ecc9c2;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+
     z-index: 8; 
 }
 
