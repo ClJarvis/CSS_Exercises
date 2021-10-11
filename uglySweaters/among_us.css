@@ -8,9 +8,9 @@ body {
 /* https://www.colorschemer.com/css-color-codes/  */
 
 .main {
-	background: #333;
+	background: #000;
 	height: 75%;
-	width: 85vw;
+	width: 90vw;
 	padding: 100px;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -98,7 +98,7 @@ body {
 	width: 100%;
 
 	  background:   linear-gradient(
-      #FFC107, 
+      #fff, #FFC107, 
       rgba(255, 0, 0, 0.45)
     );
 }
@@ -206,7 +206,7 @@ body {
 }
 
 .skullCrew {
-	background-image: url(../characters/LEGO_GHOUL.jpg);
+	background-image: url(../characters//lego/LEGO_skull.png);
     background-size: 100% 100%;
 }
 
