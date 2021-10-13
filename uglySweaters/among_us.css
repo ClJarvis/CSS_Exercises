@@ -96,8 +96,7 @@ body {
 .torso {
 	height: 75%;
 	width: 100%;
-
-	  background:   linear-gradient(
+	background:   linear-gradient(
       #fff, #FFC107, 
       rgba(255, 0, 0, 0.45)
     );
@@ -161,7 +160,7 @@ body {
 	
 }
 .blue {
-	background-color: #3799d2; /*css logo color */
+	background-color: royalblue; /*#3799d2; css logo color */
 	
 }
 .yellow {
@@ -170,7 +169,6 @@ body {
 }
 .green {
 	background-color: green;
-	
 }
 
 .purple {
@@ -192,8 +190,8 @@ body {
     z-index: 1;
 	border: 8px solid black;
 	justify-content: space-between;
-
 }
+
 .visorReflect{
 	background-color: white;
 	height: 24px;
@@ -206,7 +204,7 @@ body {
 }
 
 .skullCrew {
-	background-image: url(../characters//lego/LEGO_skull.png);
+	background-image: url(screengrabs/skull.jpg);
     background-size: 100% 100%;
 }
 
