@@ -140,7 +140,7 @@ body {
 	height: 220px;
     width: 185px;
     background:
-      rgba(0, 0, 0, 0.80);
+      rgba(0, 0, 0, 0.60);
 
 	display: flex;
 	justify-content: center;
@@ -153,6 +153,7 @@ body {
 	border-bottom-right-radius: 54%;
 	border-bottom-left-radius: 54%; 
 	border: 6px solid #000;
+	box-shadow: 3px darkred;
 
 	justify-content: space-between;
 	z-index: 0;
@@ -165,8 +166,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   
-
 }
+
 
 .maskframe {
 	/* background-color: ;
@@ -192,7 +193,7 @@ body {
 	/*border: 2px solid #333;*/
 	margin-left: -6px;	
 	z-index: 5;
-	margin-top: 85px;
+	margin-top: 15px; 
 }
 .verticalLine {
 	background-color: black;
@@ -203,10 +204,98 @@ body {
 	z-index: 0;
 }
 
-.hoodie {
-	background-color:  #df3551;
 
+.square {
+	height: 40px;
+	width: 40px;
+	
+	border-top: 10px solid  rgba(255, 255, 255, 0.75);
+	border-right: 10px solid rgba(255, 255, 255, 0.75);
+	border-bottom: 10px solid rgba(255, 255, 255, 0.75);
+	border-left: 10px solid rgba(255, 255, 255, 0.75);
 }
+.circle {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border-top: 10px solid  rgba(255, 255, 255, 0.75);
+	border-right: 10px solid rgba(255, 255, 255, 0.75);
+	border-bottom: 10px solid rgba(255, 255, 255, 0.75);
+	border-left: 10px solid rgba(255, 255, 255, 0.75);
+}
+
+.triangle {
+	
+	border-right: 40px solid transparent;
+	border-bottom: 60px solid rgba(255, 255, 255, 0.75);
+	border-left: 40px solid transparent;
+	margin-bottom: 54px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.triangleInner {
+	
+	border-right: 34px solid transparent;
+	border-bottom: 50px solid #370000;
+	border-left: 34px solid transparent;
+	margin-left: -73px;
+margin-top: -48px;
+	
+}
+
+.centerLineTriangle {
+	background-color: black;
+	height: 12px;
+	width: 194px;
+	/*border: 2px solid #333;*/
+	margin-left: -6px;	
+	z-index: 5;
+	margin-top: -45px; 
+}
+
+.verticalLineTriangle {
+	background-color: black;
+	height: 125px;
+	width: 14px;
+	/*border: 2px solid #333;*/
+	margin-top: -14px;	
+	z-index: 0;
+}
+
+.hoodie {
+	background-color: #b93d51;
+	height: 300px;
+	width: 225px;
+	border: 4px solid darkred;
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 30%;
+	border-bottom-right-radius: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px; 
+}
+
+.hoodieInner {
+	height: 234px;
+	width: 192px;
+	background: darkred;
+    
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	overflow: visible;
+	border: 4px solid darkred;
+    	border-top-right-radius: 45%;
+	border-top-left-radius: 45%;
+	border-bottom-right-radius: 54%;
+	border-bottom-left-radius: 54%; 
+}
+
 
 
 
