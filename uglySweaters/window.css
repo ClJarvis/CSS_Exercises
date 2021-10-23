@@ -292,6 +292,9 @@ z-index: 99;
   
 }
 
+/* ADD FANGS two over lapping circles
+ red over back show thin slice of black for fangs  */
+
 
 .leg1 {
   width: 150px;
@@ -312,6 +315,69 @@ z-index: 99;
   transform: rotate(-120deg);
   position: absolute;
 }
+
+.leg2 {
+  width: 150px;
+  height: 8px;
+  background-color: black;
+    transform: rotate(140deg);
+    position: absolute;
+    margin-left: -125px;
+    margin-top: 92px;
+
+}
+.leg2_knee {
+  width: 129px;
+  height: 8px;
+  background-color: black;
+  margin-left: -136px;
+  margin-top: 285px;
+  transform: rotate(-120deg);
+  position: absolute;
+}
+
+/* RIGHT */
+
+.leg3 {
+  width: 150px;
+  height: 8px;
+  background-color: transparent;
+    transform: rotate(-140deg);
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 80px;
+
+}
+.leg3_knee {
+  width: 129px;
+  height: 8px;
+  background-color: black;
+margin-left: 51px;
+margin-top: 283px;
+transform: rotate(120deg);
+  position: absolute;
+}
+
+.leg4 {
+  width: 150px;
+  height: 8px;
+  background-color: transparent;
+    transform: rotate(-140deg);
+    position: absolute;
+    margin-left: 73px;
+    margin-top: 335px;
+
+}
+.leg4_knee {
+  width: 129px;
+  height: 8px;
+  background-color: black;
+margin-left: 26px;
+margin-top: 284px;
+ transform: rotate(120deg);
+  position: absolute;
+}
+
 
 
 
