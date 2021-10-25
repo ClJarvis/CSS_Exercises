@@ -135,7 +135,10 @@ z-index: 99;
 }
 
 .window {
-	background-color: #4d108a;
+	background: /*#4d108a;*/
+
+	linear-gradient( rgb(77, 16, 138, 0.75), 
+		#49FC84 );
 	height: 368px;
 	width: 225px;
 	/*border: 4px solid #dc1eec; #b817c6;*/
@@ -154,31 +157,34 @@ z-index: 99;
 }
 
 .window_red {
-	background-color: #ca1313;
+	background: 
+linear-gradient(
+      rgba(255, 0, 0, 0.95), 
+      rgba(255, 255, 0, 0.75)
+    )
 }
 
 
 /* BLOCK HEAD ////////// */
 
-.blockHead {
-	height: 65px;
-    width: 85px;
-    background: black;
-    border-radius: 20%;
+	.blockHead {
+	height: 79px;
+	width: 72px;
+	background: black;
+	border-radius: 20%;
 	display: flex;
 	justify-content: center;
-	align-items: center; 
-
+	align-items: center;
 	border: 6px solid #000;
 	justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  z-index: auto;
-  position:absolute;
-  margin-top: -131px;
-  margin-right: 50px;
-  
+	flex-direction: row;
+	flex-wrap: wrap;
+	z-index: auto;
+	position: absolute;
+	margin-top: -155px;
+	margin-right: 50px;  
 }
+
 .blockHeadBody {
 	height: 285px;
     width: 145px;
@@ -368,7 +374,8 @@ transform: rotate(120deg);
     margin-top: 335px;
 
 }
-.leg4_knee {
+
+.leg4_knee  {
   width: 129px;
   height: 8px;
   background-color: black;
@@ -379,24 +386,135 @@ margin-top: 284px;
 }
 
 
+/* //////// Raven ////////// */
+
+.raven {
+    background: black;
+	height: 135px;
+    width: 125px;
+    transform: skew(15deg, 15deg);
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 54%;
+	border-bottom-left-radius: 54%; 
+	justify-content: space-between;
+	margin-top: 120px;
+	margin-left: 75px;
 
 
-.maskframe {
-	/* background-color: ;
-	height: 150px;
-	width: 15px; */
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
+	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center; 
-	/*border: 2px solid #333; */
-	border-top: 0;
 	overflow: visible;
-	/*flex-direction: column; */
+  
 }
+
+.ravenHead {
+    background: black;
+	height: 43px;
+	width: 77px;
+	transform: skew(-0.6turn, 1deg);
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 44%;
+	border-bottom-left-radius: 54%;
+	justify-content: space-between;
+	margin-top: -139px;
+	margin-left: -62px;
+
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	overflow: visible;
+  
+}
+
+
+.ravenTailfeathers {
+    background: black;
+	height: 35px;
+	width: 125px;
+	transform: rotate(-140deg);
+	/*transform: skew(35deg, 15deg);*/
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 54%;
+	border-bottom-left-radius: 54%;
+		
+	margin-top: -52px;
+	margin-left: 104px;
+
+
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	overflow: visible;
+  
+}
+
+
+.ravenlegL {
+width: 241px;
+height: 8px;
+background-color: #532020;
+margin-left: -42px;
+margin-bottom: -122px;
+transform: rotate(120deg);
+  position: absolute;
+}
+
+
+.ravenlegR {
+  width: 241px;
+height: 8px;
+background-color: #000;
+margin-left: -22px;
+margin-bottom: -102px;
+ transform: rotate(120deg);
+  position: absolute;
+}
+
+
+
+.hourglass {
+border-top: 125px solid #000;
+border-bottom: 195px solid #000;
+border-left: 40px solid transparent;
+border-right: 40px solid transparent;
+height: 0px;
+width: 45px;
+position: absolute;
+border-radius: 20%;
+margin-bottom: -155px;
+}
+
+
+.headlessArmLeft {
+	background-color: red;
+	height: 200px;
+	width: 27px;
+	margin-top: 163px;
+	margin-left: -241px;
+	position: absolute;
+	border-radius: 10%;
+}
+
+
+.headlessArmRight {
+	background-color: black;
+	height: 200px;
+	width: 27px;
+	margin-top: 163px;
+	margin-left: 141px;
+	position: absolute;
+	border-radius: 10%;
+}
+
+
+/* ///// WINDOW PANE //// */
 
 .centerLine {
 	background-color: #000;
@@ -428,11 +546,7 @@ margin-top: 284px;
 	
 }
 
-.verticalLineTriangle {
-	background-color: #000;
-	height: 380px;
-	width: 6px;
-}
+
 
 
 
