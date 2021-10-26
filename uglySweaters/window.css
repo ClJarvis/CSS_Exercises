@@ -318,7 +318,7 @@ linear-gradient(
   background-color: black;
   margin-left: -107px;
   margin-top: 285px;
-  transform: rotate(-120deg);
+  transform: rotate(-118deg);
   position: absolute;
 }
 
@@ -386,8 +386,75 @@ margin-top: 284px;
 }
 
 
-/* //////// Raven ////////// */
+/* //////// COffin ? ////////// */
 
+.coffinCap {
+	border-bottom: 50px solid black;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+	position: absolute;
+	margin-top: 220px;
+}
+
+.vampHead{
+    background-color: black;
+    height: 60px;
+    width: 58px;
+    margin-top: -160px;
+    position: absolute;
+    border-radius: 45%;
+}
+
+
+.vamp {
+	background-color: black;
+
+	height: 215px;
+	width: 85px;
+	border-radius: 25%;
+
+	position: absolute;
+	margin-top: 99px;
+}
+ .vampbat {
+ 	color: black;
+ 	font-weight: bold;
+ 	font-size: 3rem;
+ 	position: absolute;
+ 	margin-top: -290px;
+ 	margin-right: 50px;
+ }
+
+.vampbat2 {
+ 	color: black;
+ 	font-weight: bold;
+ 	font-size: 3rem;
+ 	position: absolute;
+ 	margin-top: 90px;
+ 	margin-right: 150px;
+ }
+ .vampbat3 {
+ 	color: black;
+ 	font-weight: bold;
+ 	font-size: 3rem;
+ 	position: absolute;
+ 	margin-top: 90px;
+ 	margin-right: -150px;
+ }
+
+.coffinBottom {
+	border-top: 50px solid black;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+	position: absolute;
+	margin-top: 320px;
+}
+
+/*
 .raven {
     background: black;
 	height: 135px;
@@ -412,18 +479,32 @@ margin-top: 284px;
   
 }
 .ghost {
-	border-top: 125px solid transparent;
-	border-bottom: 195px solid #000;
+    border-top: 5px solid transparent;
+    border-bottom: 95px solid #000;
+    border-left: 10px solid transparent;
+    border-right: 100px solid transparent;
+    height: px;
+    width: 30px;
+    position: absolute;
+    border-radius: 18%;
+    margin-bottom: -282px;
+    margin-left: 20px;
+    transform: skew(1.5turn, 3deg);
+
+}
+
+.ghost Eye {
+	border-top: 195px solid #000;
+	border-bottom: 125px solid transparent;
 	border-left: 100px solid transparent;
 	border-right: 100px solid transparent;
 	height: 0px;
-	width: 0px;
+	width: 30px;
 	position: absolute;
 	border-radius: 18%;
-	margin-bottom: -59px;
-	margin-left: 12px;
+	margin-bottom: 69px;
+	margin-left: -20px;
 	transform: skew(0.55turn, 3deg);
-
 }
 
 
@@ -454,7 +535,7 @@ margin-top: 284px;
 	height: 35px;
 	width: 125px;
 	transform: rotate(-140deg);
-	/*transform: skew(35deg, 15deg);*/
+	/*transform: skew(35deg, 15deg); ////////////
 	border-top-right-radius: 50%;
 	border-top-left-radius: 50%;
 	border-bottom-right-radius: 54%;
@@ -494,7 +575,7 @@ margin-bottom: -102px;
   position: absolute;
 }
 
-
+*/
 
 .hourglass {
 border-top: 125px solid #000;
