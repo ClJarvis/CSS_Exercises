@@ -393,6 +393,8 @@ margin-top: 284px;
 	height: 135px;
     width: 125px;
     transform: skew(15deg, 15deg);
+    border: 4px dotted black;
+    border-style: dotted;
 	border-top-right-radius: 50%;
 	border-top-left-radius: 50%;
 	border-bottom-right-radius: 54%;
@@ -409,6 +411,21 @@ margin-top: 284px;
 	overflow: visible;
   
 }
+.ghost {
+	border-top: 125px solid transparent;
+	border-bottom: 195px solid #000;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	border-radius: 18%;
+	margin-bottom: -59px;
+	margin-left: 12px;
+	transform: skew(0.55turn, 3deg);
+
+}
+
 
 .ravenHead {
     background: black;
@@ -528,7 +545,7 @@ margin-bottom: -155px;
 .head{
     background-color: black;
     height: 60px;
-    width: 43px;
+    width: 48px;
     margin-top: -245px;
     margin-left: 9px;
     position: absolute;
