@@ -401,12 +401,31 @@ margin-top: 284px;
 .vampHead{
     background-color: black;
     height: 60px;
-    width: 58px;
+    width: 48px;
     margin-top: -160px;
     position: absolute;
     border-radius: 45%;
 }
 
+.vcollar {
+	background-color: black;
+	height: 39px;
+	width: 4px;
+	position: absolute;
+	transform: rotate(120deg);
+	margin-right: 37px;
+	margin-bottom: 121px;
+}
+
+.vcollarRight {
+	background-color: black;
+	height: 39px;
+	width: 4px;
+	position: absolute;
+	transform: rotate(-120deg);
+	margin-right: -37px;
+	margin-bottom: 121px;
+}
 
 .vamp {
 	background-color: black;
