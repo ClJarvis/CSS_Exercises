@@ -150,7 +150,7 @@ z-index: 99;
 	align-items: center;
 
 	margin-left: 30px; 
-	margin-top: -10px;
+	margin-top: 10px;
 	 overflow: hidden;
 
 }
@@ -185,7 +185,7 @@ linear-gradient(
 
 /* BLOCK HEAD ////////// */
 
-	.blockHead {
+.blockHead {
 	height: 79px;
 	width: 72px;
 	background: black;
@@ -205,8 +205,8 @@ linear-gradient(
 
 .blockHeadBody {
 	height: 285px;
-    width: 145px;
-    background: black;
+	width: 145px;
+	background: black;
 
 	display: flex;
 	justify-content: center;
@@ -215,12 +215,12 @@ linear-gradient(
 	border: 6px solid #000;
 	border-radius: 10%;
 	justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 250px;
-  margin-right: 50px;
-  position:absolute;
-  
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 250px;
+	margin-right: 50px;
+	position:absolute;
+	  
 }
 
 .neck {
@@ -278,14 +278,11 @@ linear-gradient(
 
 .spider {
 	height: 135px;
-    width: 125px;
-    background:
-      rgba(0, 0, 0, 1);
+	width: 125px;
+	background: black;
 
 	display: flex;
-	justify-content: center;
 	align-items: center; 
-	overflow: visible;
 	border-top-right-radius: 50%;
 	border-top-left-radius: 50%;
 	border-bottom-right-radius: 54%;
@@ -294,26 +291,22 @@ linear-gradient(
 	position: absolute;
 	margin-top: -355px;
 	margin-left: 100px
-  
 }
+
 .spider2 {
 	height: 85px;
     width: 85px;
-    background:
-      rgba(0, 0, 0, 1);
-
+    background: black;
 	display: flex;
-	justify-content: center;
 	align-items: center; 
-	overflow: visible;
+
 	border-top-right-radius: 50%;
 	border-top-left-radius: 50%;
 	border-bottom-right-radius: 54%;
 	border-bottom-left-radius: 54%; 
 	justify-content: space-between;
 	margin-top: 145px;
-	position: absolute;
-  
+	position: absolute;  
 }
 
 /* ADD FANGS two over lapping circles
@@ -321,15 +314,15 @@ linear-gradient(
 
 
 .leg1 {
-  width: 150px;
-  height: 8px;
-  background-color: black;
-    transform: rotate(140deg);
-    position: absolute;
-    margin-left: -86px;
-    margin-top: 80px;
-
+	width: 150px;
+	height: 8px;
+	background-color: black;
+	transform: rotate(140deg);
+	position: absolute;
+	margin-left: -86px;
+	margin-top: 80px;
 }
+
 .leg1_knee {
   width: 129px;
   height: 8px;
@@ -404,7 +397,7 @@ margin-top: 284px;
 }
 
 
-/* //////// COffin ? ////////// */
+/* //////// Vampire ////////// */
 
 .coffinCap {
 	border-bottom: 50px solid black;
@@ -447,14 +440,13 @@ margin-top: 284px;
 
 .vamp {
 	background-color: black;
-
 	height: 215px;
 	width: 85px;
 	border-radius: 25%;
-
 	position: absolute;
 	margin-top: 99px;
 }
+
  .vampbat {
  	color: black;
  	font-weight: bold;
@@ -613,6 +605,8 @@ margin-bottom: -102px;
 }
 
 */
+
+/* //////   Headless Woman */
 
 .hourglass {
 border-top: 125px solid #000;
