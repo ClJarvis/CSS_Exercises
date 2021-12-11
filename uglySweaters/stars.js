@@ -8,7 +8,7 @@ for (let i = 0; i < uglyStars; i++) {
     var xy = getRandomPosition();
       star.style.top = xy[0] +'px';
       star.style.left = xy[1] + 'px';
-    document.getElementById("torsojs").innerHTML += "X";
+    document.getElementById("myDiv").innerHTML += "*";
 }
 
 function getRandomPosition() {
@@ -18,5 +18,5 @@ function getRandomPosition() {
     var randomY = Math.floor(Math.random()*y);
 
     return [randomX,randomY];
-    document.getElementById("torsojs").innerHTML += "oo";
+    document.getElementById("myDiv").innerHTML += "*";
 }
