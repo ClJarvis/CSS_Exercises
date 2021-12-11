@@ -60,16 +60,16 @@ body {
 }
 
 .snowcollar {
-	  display: flex;
-  flex-direction: row;
-	justify-content: space-around;
-	border: blue 4px solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
  }
 
 .stitch {
-	border: 2px dotted var(--DarkRed);
-	border-right: 1px dotted var(--DarkRed);
-	border-left: 1px dotted var(--DarkRed);
+	border: 2px dashed var(--DarkRed);
+	border-right: 1px dashed var(--DarkRed);
+	border-left: 1px dashed var(--DarkRed);
 	height: 30px;
 	width: 10%;
 	display: flex;
@@ -127,6 +127,11 @@ body {
 	margin-right: 0px;
 }
 
+.redbox {
+	background-color: var(--MainRed);
+	width: 700px;
+	height: 38px;
+}
 
 /* CHARACTER    //////////////// */
 
