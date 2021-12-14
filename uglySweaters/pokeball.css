@@ -137,16 +137,9 @@ body {
 	background-color: white;
 	height: 125px;
 	width: 250px;
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
+
 	border-bottom-left-radius: 50%;
 	border-bottom-right-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center; 
-	border-top: 0;
-	overflow: visible;
-	flex-direction: column;
 	margin-top: 125px;
 }
 
@@ -167,20 +160,18 @@ body {
 }
 
 .leftEar {
-transform: rotate(45deg);
+transform: rotate(60deg);
 background-color: var(--pokeyellow);
 height: 4px;
 width: 12px;
 border-radius: 40%;
 margin-left: -5px;
 margin-top: -3px;
-
 position: absolute;
-
 }
 
 .rightEar {
-transform: rotate(-45deg);
+transform: rotate(-60deg);
 background-color:var(--pokeyellow);
 height: 4px;
 width: 12px;
@@ -188,7 +179,6 @@ border-radius: 40%;
 margin-left: 5px;
 margin-top: -3px;
 position: absolute;
-
 }
 
 .iconHead {
@@ -197,10 +187,12 @@ position: absolute;
 	width: 14px;
 	border-radius: 40%;
 	filter: drop-shadow(0 0 0.2rem black);
+	margin-top: 5px;
 }
 
 .fa {
-	color: var(--pokeyellow);
-filter: drop-shadow(0 0 0.1rem black);}
+  color: var(--pokeyellow);
+  filter: drop-shadow(0 0 0.1rem black);
+}
 
 /* Pokemon style guide https://georgenasenior.com/Pokemon-Style-Guide */
