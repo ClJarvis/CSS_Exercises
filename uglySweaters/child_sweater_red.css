@@ -1,6 +1,6 @@
 :root {
 	--MainRed: #a42624;;
-	--DarkRed: #370609;
+	--DarkRed: #611913;
 	--Green: #3d8425;
 }
 
@@ -223,7 +223,7 @@ body {
 }
 
 .cradleBody {
-	background-color: var(--MainRed);
+	background-color: var(--DarkRed);
 	height: 50px;
 	width: 120px;
 	border-top-right-radius: 0;
@@ -240,7 +240,7 @@ body {
 }
 
 .cradleLip {
-	background-color: var(--MainRed);
+	background-color: white;
 	height: 12px;
 	width: 128px;
 	border: 2px solid black;
@@ -249,7 +249,7 @@ body {
 }
 
 .cradleBack {
-	background-color: var(--MainRed);
+	background-color: var(--DarkRed);
 	position: absolute;
 	height: 70px;
 	width: 120px;
