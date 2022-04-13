@@ -1,0 +1,514 @@
+:root {
+	--MainRed: #a42624;
+	--DarkRed: #7a6011;
+	--Green: #3d8425;
+	--Yellow: #ffd700;
+	--LgGreen: #00ff58;
+	--Blue: #0028ff;
+	--Pink: #ff00a7;
+	--Purple: #d700ff;
+}
+
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+.main {
+	background: var(--Green);
+	height: 75%;
+	width: 90vw;
+	padding: 100px;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.flex-container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+/* SWEATER SWEATER     ////// */
+
+ .sweater {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent; 
+    flex-direction: row;
+
+}
+.collar, .base, .redzagtop, .redzagbttm, .toprow, .secndrow  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+z-index: 99;
+}
+
+
+.collar, .base {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+.stitch{
+	border: 2px dashed var(--Yellow);
+	border-right: 1px dashed var(--Yellow);
+	border-left: 1px dashed var(--Yellow);
+	height: 30px;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px; 
+}
+
+.batLeft {
+  transform: rotate(45deg);
+  font-size: 1.5rem;
+}
+
+.batUp {
+  transform: rotate(-90deg);
+  font-size: 2rem;
+}
+
+.batDown {
+  transform: rotate(90deg);
+  font-size: 2rem;
+}
+
+.batRight {
+  transform: rotate(145deg);
+  font-size: 1.5rem;
+}
+
+.eyes{
+	font-size: 2rem;
+	padding-top: 2px;
+}
+
+.torso {
+	height: 75%;
+	width: 100%;
+	background: var(--Green);
+}
+
+
+.orangeStitch {
+	background-color: var(--LgGreen);
+	border: 2px dotted var(--Purple);
+	height: 15px;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.whiteStitch {
+	background-color: var(--Blue);
+	border: 2px dotted var(--Yellow);
+	height: 15px;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+
+/* CHARACTER    //////////////// */
+
+.character {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute; 
+	overflow: visible;
+	margin: -10px 0 0 0;
+}
+
+.egg {
+	background: /*#4d108a;*/
+
+	linear-gradient(var(--Pink), 
+		white );
+	height: 364px;
+	width: 225px;
+	border-top-right-radius: 51%;
+	border-top-left-radius: 51%;
+	border-bottom-left-radius: 40%;
+	border-bottom-right-radius: 40%;
+	border: 2px white solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 30px; 
+	margin-top: 10px;
+	 overflow: hidden;
+
+}
+
+.egg_red {
+	background: 
+linear-gradient(
+      var(--Purple), 
+      var(--Blue)
+    );
+}
+
+/* ///// WINDOW PANE //// 
+
+.centerLine {
+	background-color: #000;
+	height: 3px;
+	width: 100%;
+	z-index: 0;
+	margin-top: 10px;
+}
+
+.verticalLine {
+	background-color: #000;
+	height: 100%;
+	width: 6px;
+	margin-top: 0px;	
+	z-index: 0;
+}
+
+*/
+
+/* BLOCK HEAD ////////// */
+
+.blockHead {
+	height: 79px;
+	width: 72px;
+	background: black;
+	border-radius: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 6px solid #000;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	z-index: auto;
+	position: absolute;
+	margin-top: -155px;
+	margin-right: 50px;  
+}
+
+.blockHeadBody {
+	height: 285px;
+	width: 145px;
+	background: black;
+
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	overflow: hidden;
+	border: 6px solid #000;
+	border-radius: 10%;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 250px;
+	margin-right: 50px;
+	position:absolute;
+	  
+}
+
+.neck {
+	background-color: black;
+	height: 50px;
+	width: 50px;
+	margin-top: -20px;
+	margin-left: -50px;
+	position: absolute;
+
+}
+
+.shoulder {
+	background-color: black;
+	height: 51px;
+	width: 27px;
+	margin-top: 15px;
+	margin-left: 120px;
+	position: absolute;
+	border-radius: 10%;
+
+}
+.arm {
+	background-color: black;
+	height: 200px;
+	width: 27px;
+	margin-top: 163px;
+	margin-left: 141px;
+	position: absolute;
+	border-radius: 10%;
+}
+
+.shoulderLeft {
+	background-color: black;
+	height: 51px;
+	width: 27px;
+	margin-top: 15px;
+	margin-left: -220px;
+	position: absolute;
+	border-radius: 10%;
+
+}
+.armLeft {
+	background-color: black;
+	height: 200px;
+	width: 27px;
+	margin-top: 163px;
+	margin-left: -241px;
+	position: absolute;
+	border-radius: 10%;
+}
+
+
+/* spider ////////// */
+
+.spider {
+	height: 125px;
+	width: 125px;
+	background: var(--Yellow);
+
+	display: flex;
+	align-items: center; 
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 54%;
+	border-bottom-left-radius: 54%; 
+	justify-content: space-between;
+	position: absolute;
+	
+}
+
+.spider2 {
+	height: 85px;
+    width: 85px;
+    background: var(--Pink);
+	display: flex;
+	align-items: center; 
+
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 54%;
+	border-bottom-left-radius: 54%; 
+	justify-content: space-between;
+	
+	position: absolute;  
+}
+
+
+/* //////// Vampire ////////// */
+
+.coffinCap {
+	border-bottom: 50px solid black;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+	position: absolute;
+	margin-top: 220px;
+}
+
+.vampHead{
+    background-color: black;
+    height: 60px;
+    width: 48px;
+    margin-top: -160px;
+    position: absolute;
+    border-radius: 45%;
+}
+
+.vcollar {
+	background-color: black;
+	height: 39px;
+	width: 4px;
+	position: absolute;
+	transform: rotate(120deg);
+	margin-right: 37px;
+	margin-bottom: 121px;
+}
+
+.vcollarRight {
+	background-color: black;
+	height: 39px;
+	width: 4px;
+	position: absolute;
+	transform: rotate(-120deg);
+	margin-right: -37px;
+	margin-bottom: 121px;
+}
+
+.vamp {
+	background-color: black;
+	height: 215px;
+	width: 85px;
+	border-radius: 25%;
+	position: absolute;
+	margin-top: 99px;
+}
+
+ .vampbat {
+ 	color: black;
+ 	font-weight: bold;
+ 	font-size: 3rem;
+ 	position: absolute;
+ 	margin-top: -290px;
+ 	margin-right: 50px;
+ }
+
+.vampbat2 {
+ 	color: black;
+ 	font-weight: bold;
+ 	font-size: 3rem;
+ 	position: absolute;
+ 	margin-top: 90px;
+ 	margin-right: 150px;
+ }
+ .vampbat3 {
+ 	color: black;
+ 	font-weight: bold;
+ 	font-size: 3rem;
+ 	position: absolute;
+ 	margin-top: 90px;
+ 	margin-right: -150px;
+ }
+
+.coffinBottom {
+	border-top: 50px solid black;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+	position: absolute;
+	margin-top: 320px;
+}
+
+
+/* //////   Headless Woman */
+
+.hourglass {
+border-top: 125px solid #000;
+border-bottom: 195px solid #000;
+border-left: 40px solid transparent;
+border-right: 40px solid transparent;
+height: 0px;
+width: 45px;
+position: absolute;
+border-radius: 20%;
+margin-bottom: -155px;
+}
+
+
+.headlessArmLeft {
+	background-color: black;
+	height: 125px;
+	width: 20px;
+	margin-top: -163px;
+	margin-left: -200px;
+	position: absolute;
+	border-radius: 20%;
+	transform: rotate(120deg);
+}
+
+.headlessArmLeftElbow {
+	background-color: black;
+	height: 100px;
+	width: 20px;
+	margin-top: -233px;
+	margin-left: -127px;
+	position: absolute;
+	border-radius: 20%;
+	transform: rotate(-120deg);
+}
+
+.headlessHand{
+	background-color: black;
+	height: 16px;
+	width: 30px;
+	margin-top: -285px;
+	margin-left: -19px;
+	position: absolute;
+	border-radius: 18%;
+	transform: rotate(0deg);
+}
+
+.head{
+    background-color: black;
+    height: 60px;
+    width: 48px;
+    margin-top: -245px;
+    margin-left: 4px;
+    position: absolute;
+    border-radius: 45%;
+    transform: rotate(-23deg);
+}
+
+.headlessArmRight {
+	background-color: black;
+	height: 130px;
+	width: 20px;
+	margin-top: 11px;
+	margin-left: 100px;
+	position: absolute;
+	border-radius: 20%;
+}
+
+.headlessArmRightElbow {
+	background-color: black;
+	height: 55px;
+	width: 23px;
+	margin-top: 136px;
+	margin-left: 64px;
+	position: absolute;
+	transform: rotate(-120deg);
+	border-radius: 20%;
+}
+
+
+
+/*
+MESH Background with tint
+
+
+linear-gradient(
+      rgba(0, 0, 0, 0.75), 
+      rgba(0, 0, 0, 0.75)
+    ),
+     url(images/me tal-mesh-vector-26.jpg); 
+
+blackwidow hourglass
+https://www.w3schools.com/howto/howto_css_shapes.asp
+
+.trapezoid {
+border-top: 25px solid #555;
+	border-bottom: 25px solid #555;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0px;
+	width: 25px;
+}
+
+
+     */
