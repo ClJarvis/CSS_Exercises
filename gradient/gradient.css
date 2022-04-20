@@ -1,0 +1,183 @@
+:root {
+	--MainPurple: #7d3b74;  /*#3d8425; */
+	--Yellow: #ffd700;
+	--LgGreen: #00ff58;
+	--Blue: #0028ff;
+	--Pink: #ff00a7;
+	--Purple: #d700ff;
+}
+
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+.main {
+	background: white;
+	height: 75%;
+	width: 90vw;
+	padding: 100px;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.flex-container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+/* SWEATER SWEATER     ////// */
+
+ .sweater {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent; 
+    flex-direction: row;
+
+}
+.collar, .base  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+.collar, .base {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+.stitch{
+/*	background-color: black; */
+	height: 10px;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px; 
+}
+
+
+.torso {
+	height: 75%;
+	width: 100%;
+}
+
+
+
+
+/* CHARACTER    //////////////// */
+
+.character {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative; 
+	overflow: visible;
+	margin: -10px 0 0 0;
+}
+
+.box {
+	height: 364px;
+	width: 225px;
+	border: 4px black solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 30px; 
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.box_purple_first {
+	background: linear-gradient(
+      var(--Purple), 
+      var(--Blue)
+    );
+}
+
+.box_33Percent {
+	background: 
+linear-gradient(
+      var(--Purple) 33%, 
+      var(--Blue)
+    );
+}
+
+.box_66Percent {
+	background: 
+linear-gradient(
+      var(--Purple) 66%, 
+      var(--Blue)
+    );
+
+}
+
+.box_blue_first {
+  background: linear-gradient(var(--Blue), 
+		var(--Purple));
+}
+
+/*
+
+other gradients
+
+
+.egg {
+	background: 
+	linear-gradient(to bottom right, var(--Pink), 
+		white );
+	height: 364px;
+	width: 225px;
+
+	border: 2px black solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 30px; 
+	margin-top: 10px;
+	overflow: hidden;
+
+}
+
+
+.egg_purple {
+	background: 
+linear-gradient(
+      var(--Purple) 30%, 
+      var(--Blue)
+    );
+}
+
+.egg_radial {
+	background: 
+radial-gradient(
+      var(--Purple) 30%, 
+      var(--Blue)
+    );
+
+}
+
+.egg_3color {
+  background: linear-gradient(to bottom right, var(--Pink), 
+		white, var(--Blue));
+}
+*/
