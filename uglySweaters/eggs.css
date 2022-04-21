@@ -1,7 +1,5 @@
 :root {
-	--MainRed: #a42624;
-	--DarkRed: #7a6011;
-	--Green: #3d8425;
+	--MainPurple: #7d3b74;  /*#3d8425; */
 	--Yellow: #ffd700;
 	--LgGreen: #00ff58;
 	--Blue: #0028ff;
@@ -13,11 +11,11 @@ body {
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
-	color: white;
+	color: var(--MainPurple);
 }
 
 .main {
-	background: var(--Green);
+	background: var(--MainPurple);
 	height: 75%;
 	width: 90vw;
 	padding: 100px;
@@ -68,9 +66,9 @@ z-index: 99;
 
 
 .stitch{
-	border: 2px dashed var(--Yellow);
-	border-right: 1px dashed var(--Yellow);
-	border-left: 1px dashed var(--Yellow);
+	border: 2px dashed var(--Purple);
+	border-right: 1px dashed var(--Purple);
+	border-left: 1px dashed var(--Purple);
 	height: 30px;
 	width: 10%;
 	display: flex;
@@ -107,7 +105,7 @@ z-index: 99;
 .torso {
 	height: 75%;
 	width: 100%;
-	background: var(--Green);
+	background: var(--MainPurple);
 }
 
 
@@ -123,7 +121,7 @@ z-index: 99;
 
 .whiteStitch {
 	background-color: var(--Blue);
-	border: 2px dotted var(--Yellow);
+	border: 2px dotted var(--Purple);
 	height: 15px;
 	width: 10%;
 	display: flex;
@@ -144,9 +142,8 @@ z-index: 99;
 }
 
 .egg {
-	background: /*#4d108a;*/
-
-	linear-gradient(var(--Pink), 
+	background: 
+	linear-gradient(to bottom right, var(--Pink), 
 		white );
 	height: 364px;
 	width: 225px;
@@ -154,7 +151,7 @@ z-index: 99;
 	border-top-left-radius: 51%;
 	border-bottom-left-radius: 40%;
 	border-bottom-right-radius: 40%;
-	border: 2px white solid;
+	border: 2px var(--Pink) solid;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -165,13 +162,33 @@ z-index: 99;
 
 }
 
-.egg_red {
+.egg_purple {
 	background: 
 linear-gradient(
-      var(--Purple), 
+      var(--Purple) 30%, 
       var(--Blue)
     );
+border: 2px var(--Purple) solid;
+
 }
+
+.egg_radial {
+	background: 
+radial-gradient(
+      var(--Purple) 30%, 
+      var(--Blue)
+    );
+border: 2px var(--Purple) solid;
+
+}
+
+.egg_3color {
+  background: linear-gradient(to bottom right, var(--Pink), 
+		white, var(--Blue));
+  border-right: 2px var(--Blue) solid;
+}
+
+
 
 /* ///// WINDOW PANE //// 
 
