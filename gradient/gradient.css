@@ -1,7 +1,7 @@
 :root {
 	--MainPurple: #7d3b74;  /*#3d8425; */
 	--Yellow: #ffd700;
-	--LgGreen: #00ff58;
+	--Red: #ff0000f2;
 	--Blue: #0028ff;
 	--Pink: #ff00a7;
 	--Purple: #d700ff;
@@ -133,6 +133,104 @@ linear-gradient(
 .box_blue_first {
   background: linear-gradient(var(--Blue), 
 		var(--Purple));
+}
+
+
+
+/* TO RIGHT */
+
+.box_purple_first_R {
+	background: linear-gradient(to right,
+      var(--Purple), 
+      var(--Blue)
+    );
+}
+
+.box_33Percent_R {
+	background: 
+linear-gradient(to right,
+      var(--Purple) 33%, 
+      var(--Blue)
+    );
+}
+
+.box_66Percent_R {
+	background: 
+linear-gradient(to right,
+      var(--Purple) 66%, 
+      var(--Blue)
+    );
+
+}
+
+.box_blue_first_R {
+  background: linear-gradient( to right, var(--Blue), 
+		var(--Purple));
+}
+
+
+/* RED AND YELLOW */
+
+
+.box_red_first {
+	background: linear-gradient(
+      var(--Red), 
+      var(--Yellow)
+    );
+}
+
+
+.box_red_33Percent {
+	background: 
+linear-gradient(
+      var(--Red) 33%, 
+      var(--Yellow)
+    );
+}
+
+.box_red_66Percent {
+	background: 
+linear-gradient(
+      var(--Red) 66%, 
+      var(--Yellow)
+    );
+
+}
+
+.box_yellow_first {
+  background: linear-gradient(var(--Yellow), 
+		var(--Red));
+}
+
+
+.box_red_first_angle {
+	background: linear-gradient(
+      var(--Red), 
+      var(--Yellow)
+    );
+}
+
+
+.box_red_33Percent_angle {
+	background: 
+linear-gradient(45deg,
+      var(--Red), 
+      var(--Yellow)
+    );
+}
+
+.box_red_66Percent_angle {
+	background: 
+linear-gradient(90deg,
+      var(--Red), 
+      var(--Yellow)
+    );
+
+}
+
+.box_yellow_first_angle {
+  background: linear-gradient( -45deg, var(--Yellow), 
+		var(--Red));
 }
 
 /*
