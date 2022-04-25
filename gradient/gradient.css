@@ -7,6 +7,8 @@
 	--Purple: #d700ff;
 }
 
+/* Use black to blue liner gradient */
+
 body {
 	overflow: hidden;
 	padding: 0;
@@ -104,6 +106,7 @@ body {
 	margin-left: 30px; 
 	margin-top: 10px;
 	overflow: hidden;
+	filter: drop-shadow(14px 14px 10px black);
 }
 
 .box_purple_first {
@@ -169,6 +172,40 @@ linear-gradient(to right,
 }
 
 
+
+.box_purple_first_R {
+	background: linear-gradient(to right,
+      var(--Purple), 
+      var(--Blue)
+    );
+}
+
+.box_L {
+	background: 
+linear-gradient(to left,
+      var(--Purple), 
+      var(--Blue)
+    );
+}
+
+.box_purple_first {
+	background: 
+linear-gradient(
+      var(--Purple), 
+      var(--Blue)
+    );
+
+}
+
+.box_to_Top {
+  background: linear-gradient( to top, var(--Purple), 
+		var(--Blue));
+}
+
+
+
+
+
 /* RED AND YELLOW */
 
 
@@ -232,6 +269,53 @@ linear-gradient(90deg,
   background: linear-gradient( -45deg, var(--Yellow), 
 		var(--Red));
 }
+
+
+/* Multi Shapes */
+
+
+
+.multi_Colors_2 {
+		background: linear-gradient(
+      var(--Purple), 
+      var(--Blue),
+      var(--Purple)
+    );
+
+}
+
+
+.multi_Colors_3 {
+		background: linear-gradient(
+      var(--Purple), 
+      var(--Blue),
+      var(--Purple),
+      var(--Blue),
+      var(--Purple)
+    );
+}
+
+.multi_Colors_4 {
+	background: linear-gradient(
+      var(--Blue),
+      var(--Purple),
+      var(--Blue)
+    );
+}
+
+
+
+.black_box {
+	overflow: visible;
+	background: 
+	linear-gradient(
+      black, 
+      var(--Blue));
+  
+	filter: drop-shadow(14px 14px 10px black);
+
+}
+
 
 /*
 
