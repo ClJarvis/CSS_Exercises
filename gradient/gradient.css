@@ -90,7 +90,7 @@ body {
 .character {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	/*align-items: center; HIDDEN FOR TEXT TO DISPLAY AT TOP */
 	position: relative; 
 	overflow: visible;
 	margin: -10px 0 0 0;
@@ -98,7 +98,7 @@ body {
 
 .box {
 	height: 364px;
-	width: 225px;
+	width: 225px; 
 	border: 4px black solid;
 	display: flex;
 	justify-content: center;
@@ -306,6 +306,52 @@ linear-gradient(90deg,
 
 
 .black_box {
+	width: 50px;
+	overflow: visible;
+	background: 
+	linear-gradient(to right,
+      black, 
+      var(--Blue));
+  
+	filter: drop-shadow(14px 14px 10px black);
+
+}
+.black_box2 {
+	width: 100px;
+	overflow: visible;
+	background: 
+	linear-gradient(to right,
+      black, 
+      var(--Blue));
+  
+	filter: drop-shadow(14px 14px 10px black);
+
+}
+.black_box3 {
+	width: 150px;
+	overflow: visible;
+	background: 
+	linear-gradient(to right,
+      black, 
+      var(--Blue));
+  
+	filter: drop-shadow(14px 14px 10px black);
+
+}
+
+.box_text{
+	color: black;
+		font-size: 1.5em;
+
+	justify-content: left;
+	align-items: left;
+
+	position: relative;
+}
+
+.black_box_cover {
+	height: 396px;
+	width: 1584px;
 	overflow: visible;
 	background: 
 	linear-gradient(
@@ -316,7 +362,38 @@ linear-gradient(90deg,
 
 }
 
+li {
+	list-style: none;
+}
 
+/* Radial Gradient */
+
+.radial_basic {
+	background: radial-gradient(
+		var(--Purple),
+		var(--Blue));
+}
+
+.radial_basic_red {
+	background: radial-gradient(
+		var(--Red),
+		var(--Yellow));
+}
+
+.oval {
+	border-radius: 45% 50%;
+}
+
+.circle {
+	width: 364px;
+	border-radius: 50%;
+}
+
+
+.empty {
+
+	height: 100px;
+}
 /*
 
 other gradients
