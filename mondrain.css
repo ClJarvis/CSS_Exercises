@@ -1,0 +1,100 @@
+main {
+  box-sizing: border-box;
+  --s: 80vmim;
+  --g: calc(var(--s)*0.18);
+  --pink: #fe0884;
+  --white: #fff;
+  --orange: #f66931;
+  --purple: #2d1f5d;
+  --red: #c61f0c;
+  --blue: #38b7e8;
+  --green: #2c752e;
+  --dkgreen: #50603f;
+  background:black;
+  display:grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 14fr 12fr 10fr 23fr 1fr 1fr 2fr 1fr;
+  position:absolute;
+  height: 400px;
+  width: 400px;
+  top:50%;
+  left:50%;
+  padding: 10px;
+  
+    
+    
+}
+
+section.one {
+  background: var(--blue);
+}
+
+section.two {
+  background: var(--red);
+}
+section.three {
+  background: var(--pink);
+}
+section.four {
+  background: var(--purple);
+}
+section.five {
+  background: var(--blue);
+}
+section.six {
+  background: var(--orange);
+}
+
+section.seven {
+  background: var(--blue);
+}
+section.eight {
+  background: var(--white);
+}
+section.nine {
+  background: var(--blue);
+}
+section.ten {
+  background: var(--purple);
+}
+section.ev {
+  background: var(--red);
+}
+
+section.tw {
+  background: var(--orange);
+}
+section.threet {
+  background: var(--blue);
+}
+section.fourt {
+  background: var(--pink);
+}
+section.fivet {
+  background: var(--blue);
+}
+section.sixt {
+  background: var(--green);
+}
+
+section.sevent {
+  background: var(--purple);
+}
+section.et {
+  background: var(--red);
+}
+section.nint {
+  background: var(--white);
+}
+section.twy{
+  background: var(--red);
+}
+
+section:nth-child(1){
+  grid-row: 4/6;
+  grid-column: 2/4;
+}
+setiion:nth-child(2) {
+  grid-column: 2/5;
+}
