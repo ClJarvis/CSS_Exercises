@@ -1,0 +1,198 @@
+:root {
+	--Black: #000;
+	--White: #fff;
+  --OffWhite: #dbd8e3;
+  --Gray: #5c5470;
+  --MidGray: #352f44;
+  --DarkGray: #2a2438;
+}
+
+
+.flex-container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: var(--OffWhite);
+      justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+.main {
+  background-color:red;
+	height: 100%;
+	width: 100%;
+   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.outer_frame {
+  width: 300px;
+  height: 600px;
+  border: 4px black solid;
+  display: flex;
+	justify-content: center;
+	align-items: center; 
+  flex-direction: row;
+  background-color:var(--White)
+}
+
+
+
+.theChild {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute; 
+	overflow: visible;
+	margin-top: 100px;
+	filter: drop-shadow(0 0 1.5rem white);
+}
+
+.childRobe {
+	background-color: var(--White);
+	height: 40px;
+	width: 88px;
+	margin-top: -70px;
+	margin-right: -108px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.childRobeCollar {
+	background-color: var(--White);
+	height: 42px;
+	width: 92px;
+	margin-top: -90px;
+	margin-right: -92px;
+	border-top-left-radius: 34%;
+	border-top-right-radius: 34%;
+	border: 1px solid black;
+}
+
+.childHands {
+	background-color: var(--White);
+    height: 14px;
+    width: 20px;
+    margin-top: 6px;
+  border: 2px solid black;
+    border-top-left-radius: 34%;
+	border-top-right-radius: 34%;
+}
+
+.childHead {
+	background-color: var(--White);
+    height: 40px;
+    width: 60px;
+    border: 1px solid black;
+    margin-top: -150px;
+    margin-right: -76px;
+    border-top-left-radius: 34%;
+	border-top-right-radius: 34%;
+	display: flex;
+	justify-content: space-evenly;
+	overflow: visible;
+}
+
+
+
+.childEyes {
+	background-color: black;
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
+	margin-top: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+  border: 1px white solid;
+}
+
+
+.pupil {
+	background-color: white;
+	height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    margin-top: -8px;
+    margin-right: -4px;
+}
+    
+
+
+.childEars {
+    background-color:  var(--White);
+    height: 12px;
+    width: 100px;
+    border: 1px solid black;
+    margin-top: -160px;
+    margin-right: -81px;
+    border-bottom-left-radius: 62%;
+    border-bottom-right-radius: 62%;
+    border-top-left-radius: 62%;
+    border-top-right-radius: 62%;
+}
+
+.cradleBody {
+	background-color: var(--Black);
+	height: 50px;
+	width: 120px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	border: 2px solid black;
+	border-top: 0;
+	overflow: visible;
+	flex-direction: column;
+}
+
+.cradleLip {
+	background-color:  var(--White);
+	height: 12px;
+	width: 128px;
+	border: 2px solid black;
+	margin-top: -66px;
+	
+}
+
+.cradleBack {
+	background-color: var(--OffWhite);
+	position: absolute;
+	height: 70px;
+	width: 120px;
+	border-top-right-radius: 70%;
+	border-top-left-radius: 70%;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	margin-top: -138px;
+    margin-right: 10px;
+	overflow: visible;
+	z-index: -9;
+}
+
+.innerBack {
+	background-color: var(--Black);
+	position: absolute;
+	height: 86px;
+	width: 100px;
+	border-top-right-radius: 70%;
+	border-top-left-radius: 70%;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border: 2px solid black;
+	margin-top: 27px;
+    margin-right: 6px;
+	}
