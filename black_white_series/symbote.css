@@ -5,6 +5,8 @@
   --Gray: #5c5470;
   --MidGray: #352f44;
   --DarkGray: #2a2438;
+
+  --BlueHighlight: #028795;
 }
 
 
@@ -13,7 +15,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  background: var(--OffWhite);
+  background: var(--Black);
       justify-content: center;
   align-items: center; 
   position: relative;
@@ -167,12 +169,12 @@
 	position: absolute;
 	height: 170px;
 	width: 120px;
-	border-top-right-radius: 40%;
-	border-top-left-radius: 40%;
+	border-top-right-radius: 80%;
+	border-top-left-radius: 80%;
 	border-bottom-left-radius: 70%;
 	border-bottom-right-radius: 70%;
 
-	border: 2px solid black;
+	border: 2px solid var(--BlueHighlight);
 	display: flex;
 	justify-content: center;
 	align-items: center; 
@@ -182,16 +184,37 @@
 	z-index: -9;
 }
 
-.innerBack {
-	background-color: var(--Black);
+.eyes {
+	background-color: var(--White);
 	position: absolute;
-	height: 86px;
-	width: 100px;
-	border-top-right-radius: 70%;
-	border-top-left-radius: 70%;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-	border: 2px solid black;
-	margin-top: 27px;
-    margin-right: 6px;
+	height: 48px;
+	width: 48px;
+	border-top-right-radius: 44%;
+	border-bottom-right-radius: 44%;
+	border-top-left-radius: 74%;
+	border-bottom-left-radius: 74%;
+	transform: skew(10deg, 31deg);
+	border: 2px solid var(--BlueHighlight);
+	margin-top: -19px;
+    margin-right: 39px;
+	}
+
+	.left {
+
+	background-color: var(--White);
+	border: 2px solid var(--BlueHighlight);
+
+	position: absolute;
+	height: 48px;
+	width: 48px;
+	transform: skew(11deg, -31deg) scaleX(-1); 
+	margin-left: 67px;
+    margin-top: -17px;
+
+
+
+	border-top-right-radius: 44%;
+	border-bottom-right-radius: 44%;
+	border-top-left-radius: 74%;
+	border-bottom-left-radius: 74%;
 	}
