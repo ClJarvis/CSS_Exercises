@@ -31,14 +31,14 @@
 }
 
 .outer_frame {
-  width: 300px;
-  height: 600px;
-  border: 4px black solid;
+  width: 950px;
+  height: 330px;
+  border: 4px white solid;
   display: flex;
   justify-content: center;
   align-items: center; 
   flex-direction: row;
-  background-color:var(--White)
+  background-color:var(--Black)
 }
 
 
@@ -51,7 +51,7 @@
 	overflow: visible;
 	margin-top: 50px;
 	flex-direction: column;
-	filter: drop-shadow(0 0 1.5rem white);
+/*	filter: drop-shadow(0 0 1.5rem white); */
 }
 
 .plates {
@@ -70,6 +70,19 @@
 	border-right: 40px solid transparent;
 		filter: drop-shadow(0 0 .5rem black);
  	border-radius: 4%;
+ 	overflow: visible;
+}
+
+.semicircle {
+	height: 17px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: var(--Gray);
+	margin-left:20px;
+	margin-top: -13px;
+
+	position: relative;
+	z-index: 3;
 }
 
 .ringaroundeye {
@@ -79,8 +92,9 @@
 	border: 2px solid black;
 	background-color: var(--Gray);
 	margin-left: 20px;
-	margin-top: 0px;
-
+	margin-top: -10px;
+	position: relative;
+	z-index: 7;
 }
 
 .eye {
@@ -89,8 +103,11 @@
 	width: 26px;
 	border-radius: 50%;
 	border: 1px solid var(--Gray);
-	margin-left: 2px;
+	margin-left: 3px;
 	margin-top: 2px;
+	position: relative;
+		z-index: 5;
+
 	}
 
 	.eye2 {
@@ -105,10 +122,13 @@
 
 	.inside {
 		background-color: var(--Gray);
-		height: 40px;
+		height: 36px;
 		width: 160px;
-		border: 2px solid var(--DarkGray);
+		border-bottom: 2px solid var(--DarkGray);
+		border-right: 1px solid var(--DarkGray);
+		border-left: 1px solid var(--DarkGray);
 		margin-left: 20px;
+		z-index: 11;
 	}
 
 		.inside2 {
@@ -127,21 +147,26 @@
 
 	.footR {
 	background-color: var(--DarkRed);
-	height: 60px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
 	border: 2px solid black;
-	margin-left: -4px;
-	margin-top: -6px;
+	margin-left: -6px;
+	margin-top: -8px;
 	border-radius: 4%;
 
 }
 
 	.footL {
 	background-color: var(--DarkRed);
-	height: 60px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
 	border: 2px solid black;
-	margin-left: 154px;
-	margin-top: -64px;
+	margin-left: 156px;
+	margin-top: -43px;
 	border-radius: 4%;
+}
+
+.name {
+	color: white;
+	margin-bottom: -450px;
 }
