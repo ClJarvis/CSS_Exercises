@@ -1,0 +1,56 @@
+:root {
+  --Black: #000;
+  --White: #f0e4e4;
+  --Purple: #5d5080;
+  --Gray: #5c5470;
+  --MidGray: #352f44;
+  --DarkGray: #2a2438;
+  --DarkRed: #a42624;
+}
+
+
+.flex-container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: var(--Black);
+      justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Vert 300 H 600, Hort w 950 v 330 */
+
+.outer_frame {
+  width: 300px;
+  height: 600px;
+  border: 4px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: row;
+  background-color: #333;
+}
+
+
+.subject {
+	display: flex;
+	justify-content: center;
+
+	position: absolute; 
+	overflow: visible;
+	margin-top: 50px;
+	flex-direction: column;
+/*	filter: drop-shadow(0 0 1.5rem white); */
+}
+
