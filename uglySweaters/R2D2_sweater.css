@@ -1,5 +1,6 @@
 :root {
 	--sweaterblue: #105fa2;
+	--droidblue: rgb(85 143 191 / 32%);
 }
 
 
@@ -115,8 +116,6 @@ body {
 
 
 .R2D2 {
-
-	
 	display: flex;
 	justify-content: center;
 	align-items: center; 
@@ -125,7 +124,7 @@ body {
 }
 
 .head {
-	background-color: transparent;
+	background-color: var(--droidblue);
 	height: 80px;
 	width: 200px;
 	border-top-left-radius: 50%;
@@ -136,35 +135,107 @@ body {
 	overflow: hidden;
 	flex-direction: column;
 	border: 4px solid white;
-	border-bottom: 2px solid white;
+	border-bottom: 1px solid white;
 }
 
 .eye {
 	height: 20px;
 	width: 20px;
 	border: 6px solid white;
+	background-color: white;
 	border-radius: 50%;
 }
 
+.projector {
+	height: 14px;
+	width: 14px;
+	background-color: white;
+	border-radius: 50%;
+	margin-left: 68px;
+}
+
+.midrow{
+	overflow: visible;
+
+}
+
 .droidTorso {
-	background-color: transparent;
+	background-color: rgb(85 143 191 / 32%);
 	height:200px;
 	width: 200px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center; 
 	overflow: hidden;
 	flex-direction: column;
 	border: 4px solid white;
-	border-top: 2px solid white;
+	border-top: 2px solid transparent;
 	border-bottom-left-radius: 20%;
 	border-bottom-right-radius: 20%;
 
 }
 
-.leftLeg {
+.box {
+	height: 10px;
+	width: 50px;
+	background-color: white;
+}
+
+.emptybox{
+	background-color: transparent;
 	height: 20px;
-	width: 20px;
-	border: 4px solid white; 
+}  
+
+.openbox{
+	height: 60px;
+	width: 40px;
+	border:2px solid white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.circle {
+    height: 22px;
+    width: 18px;
+    border-radius: 33%;
+	background-color: white;
+}
+
+.leftLeg {
+	height: 200px;
+	width: 240px;
+	border: 2px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	overflow: visible;
+	border-top-left-radius: 6%;
+	border-top-right-radius: 6%;
+	border-bottom: 2px solid transparent;
+	background-color: 
+}
+
+.feetRow{
+	height: 20px;
+	width: 280px;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.foot{
+	height: 10px;
+	width: 40px;
+	border: 4px solid white;
+	border-top: 2px solid transparent;
+}
+
+.spacerFoot{
+	height: 10px;
+	width: 40px;
 }
 
