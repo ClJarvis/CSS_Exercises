@@ -160,7 +160,7 @@ body {
 }
 
 .droidTorso {
-	background-color: rgb(85 143 191 / 32%);
+	background-color: var(--droidblue);
 	height:200px;
 	width: 200px;
 	display: flex;
@@ -203,7 +203,7 @@ body {
 	background-color: white;
 }
 
-.leftLeg {
+.legs {
 	height: 200px;
 	width: 240px;
 	border: 2px solid white;
@@ -213,8 +213,7 @@ body {
 	overflow: visible;
 	border-top-left-radius: 6%;
 	border-top-right-radius: 6%;
-	border-bottom: 2px solid transparent;
-	background-color: 
+	border-bottom: 2px solid transparent; 
 }
 
 .feetRow{
