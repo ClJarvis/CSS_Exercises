@@ -1,0 +1,359 @@
+:root {
+	--sweaterblue: #2d00cc;
+	--droidblue: rgb(85 143 191 / 42%);
+	--thanosSkin: #8534aa;
+	--thanosAccentPurple: #9047b4;
+	--thanosAccentBlue: #2600b0;
+	--offWhite: #bdadad;
+	--sweaterGold: #a29032;
+}
+
+
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+.main {
+	background: rgb(0 0 0);
+	height: 75%;
+	width: 90vw;
+	padding: 100px;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.flex-container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* SWEATER SWEATER     ////// */
+
+ .sweater {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--sweaterblue);
+    flex-direction: row;
+
+}
+.collar, .base, .redzagtop, .redzagbttm, .toprow, .secndrow  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+
+}
+
+
+.collar, .base {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+.stitch {
+	background-color: var(--sweaterGold);
+	border: 2px dashed black;
+	border-right: 1px dashed black;
+	border-left: 1px dashed black;
+	height: 34px;
+	width: 9.09%;
+	padding: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+
+.torso {
+	height: 75%;
+	width: 100%;
+	background-image:
+        url(https://i.imgur.com/uYjnk8N.png),
+           url(https://i.imgur.com/iAGD6MA.png),
+           url(https://i.imgur.com/hIJDjbg.png);
+
+}
+
+
+.redStitch {
+	background-color: black;
+
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+
+}
+
+.transpStitch {
+
+
+	border-top: 30px solid black;
+	border-bottom: 30px solid transparent;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+
+}
+
+.transpStitch_bottom {
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid black;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+
+}
+
+.stone {
+	height: 20px;
+	width: 14px;
+	border-radius: 50%;
+	border: 4px solid black; 
+}
+
+.stoneBlue {
+	background-color: blue;
+}
+
+.stonePurple {
+	background-color: var(--thanosAccentPurple);
+}
+.stoneYellow {
+	background-color: yellow;
+	height: 26px;
+}
+.stoneAmber {
+	background-color: #df821f;
+}
+.stoneRed {
+	background-color: red;
+}
+.stoneGreen {
+	background-color: green;
+}
+/* CHARACTER    //////////////// */
+
+.character {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute; 
+	overflow: visible;
+
+	margin-top: -50px;
+}
+
+
+.thanos {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	overflow: hidden;
+	flex-direction: column;
+}
+
+
+
+.eye {
+	height: 20px;
+	width: 20px;
+	border: 6px solid white;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.projector {
+	height: 14px;
+	width: 14px;
+	background-color: white;
+	border-radius: 50%;
+	margin-left: 68px;
+}
+
+.midrow{
+	overflow: visible;
+
+}
+
+.head {
+	background-color: var(--thanosSkin);
+	height:200px;
+	width: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center; 
+	overflow: hidden;
+	flex-direction: column;
+	border: 6px solid black;
+	border-top-left-radius: 20%;
+	border-top-right-radius: 20%;
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius: 20%;
+
+}
+
+.brow {
+	height: 2px;
+	width: 80px;
+	background-color: black;
+}
+
+.eye_row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center; 
+	flex-direction: row;
+}
+
+.eyes {
+	height: 40px;
+	width: 40px;
+	background-color: black;
+	border-radius: 10%;
+	margin-right: 10px;
+	margin-left: 10px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pupil {
+	background-color: var(--offWhite);
+	height: 6px;
+	width: 6px;
+	border-radius: 4%;
+}
+
+.chinGroup {
+	display: flex;
+	align-items: baseline;		
+	justify-content: space-evenly;
+	width: 100px;
+}
+
+.chinLine{
+	background-color: black;
+	height: 20px;
+	width: 4px;
+}  
+.endChin{
+	background-color: black;
+	height: 28px;
+	width: 4px;
+}
+
+.mouth{
+	height: 40px;
+	width: 80px;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-top-left-radius: 8%;
+	border-top-right-radius: 8%;
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius: 20%;
+}
+/*
+.mouthcurl{
+	background-color: black;
+	height: 10px;
+	width: 14px;
+	margin-left: 79px;
+	margin-top: -10px;
+}
+
+.mouthcurlleft{
+	background-color: black;
+	height: 10px;
+	width: 14px;
+	margin-left: -79px;
+	margin-top: -22px;
+}
+*/
+
+.grin {
+    height: 12px;
+    width: 64px;
+    border-radius: 20%;
+	background-color: var(--offWhite);
+	margin-top: 0px;
+}
+
+.legs {
+	height: 200px;
+	width: 240px;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	overflow: visible;
+
+}
+
+.feetRow, .top{
+	height: 20px;
+	width: 280px;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.headStud {
+	height: 20px;
+	width: 60px;
+	background-color: var(--thanosSkin);
+	border: 6px solid black;
+	border-bottom: 2px solid black;
+	border-top-left-radius: 20%;
+	border-top-right-radius: 20%;
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius: 20%;
+
+	position: absolute;
+}
+
+.chin{
+	height: 20px;
+	width: 60px;
+	background-color: var(--thanosSkin);
+	border: 6px solid black;
+	border-top: 2px solid black;
+	border-top-left-radius: 20%;
+	border-top-right-radius: 20%;
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius: 20%;
+	margin-top: 2px;
+
+	position: absolute;
+}
+
+
+.spacerFoot{
+	height: 10px;
+	width: 40px;
+}
+
