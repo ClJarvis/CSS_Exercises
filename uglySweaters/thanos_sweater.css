@@ -91,32 +91,20 @@ body {
 }
 
 
-.redStitch {
-	background-color: black;
-
-	width: 10%;
-	display: flex;
-	justify-content: center;
-	align-items: center; 
-
-}
-
-.transpStitch {
 
 
+.blackRow {
 	border-top: 30px solid black;
 	border-bottom: 30px solid transparent;
 	border-left: 30px solid transparent;
 	border-right: 30px solid transparent;
-
-
 	display: flex;
 	justify-content: center;
 	align-items: center; 
 
 }
 
-.transpStitch_bottom {
+.blackRow_bottom {
 	border-top: 30px solid transparent;
 	border-bottom: 30px solid black;
 	border-left: 30px solid transparent;
@@ -160,7 +148,7 @@ body {
 	position: absolute; 
 	overflow: visible;
 
-	margin-top: -50px;
+	margin-top: 0px;
 }
 
 
@@ -229,13 +217,22 @@ body {
 	height: 40px;
 	width: 40px;
 	background-color: black;
-	border-radius: 10%;
+	border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+
+	border-top-left-radius: 50%;
 	margin-right: 10px;
 	margin-left: 10px;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.eyesR {
+	border-top-right-radius: 50%;
+	border-top-left-radius: 10%;
+
 }
 
 .pupil {
@@ -339,7 +336,7 @@ body {
 .chin{
 	height: 20px;
 	width: 60px;
-	background-color: var(--thanosSkin);
+	background-color: var(--sweaterGold);
 	border: 6px solid black;
 	border-top: 2px solid black;
 	border-top-left-radius: 20%;
