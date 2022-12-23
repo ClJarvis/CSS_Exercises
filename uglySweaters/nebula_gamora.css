@@ -2,8 +2,11 @@
 	--sweaterblue: #2d00cc;
 	--droidblue: rgb(85 143 191 / 42%);
 	--thanosSkin: #8534aa;
-	--thanosAccentPurple: #a66aa5;
-	--thanosAccentBlue: #2600b0;
+	--thanosAccentPurple: #9047b4;
+	--NebulaBlue: #2a5db2;
+	--NebulaLightBlue: #54c3d8;
+	--GamoraGreen: #a9c337;
+	--GamoraDkGreen: #749502;
 	--offWhite: #bdadad;
 	--sweaterGold: #a29032;
 }
@@ -139,6 +142,71 @@ body {
 .stoneGreen {
 	background-color: green;
 }
+
+/* HEART BACKGROUND  /////////////////  */
+
+.bigheart {
+	position: relative;
+	background-color: white;
+	width: 230px;
+	height: 230px;
+	margin-left: 50px;
+	margin-top: 50px;
+	filter: drop-shadow(2px 2px 1.95rem black);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute; 
+	overflow: visible;
+}
+
+/* The circles */
+.bigheart:before, .bigheart:after {
+	position: absolute;
+	background-color: white;
+	width: 230px;
+	height: 230px;
+	content: '';
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute; 
+	overflow: visible;
+}
+
+/* moving the circles */
+.bigheart:before {
+	bottom: 0;
+	left: -100;
+}
+
+.bigheart:after {
+	top: -100px;
+	right: 0;
+}
+
+/*Rotate the whole thing */
+
+.bigheart {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+
+
+
+
 /* CHARACTER    //////////////// */
 
 .character {
@@ -149,6 +217,7 @@ body {
 	overflow: visible;
 
 	margin-top: 0px;
+
 }
 
 
@@ -158,23 +227,29 @@ body {
 	align-items: center; 
 	overflow: hidden;
 	flex-direction: column;
+	position: absolute;
+
+		-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	z-index: 5;
 }
 
-	
+
+
 
 .head {
-	background: linear-gradient(
-	var(--thanosAccentPurple),
-	var(--thanosSkin)
-	);
-	height:200px;
-	width: 200px;
+	background-color: var(--thanosSkin);
+	height:120px;
+	width: 120px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center; 
 	overflow: hidden;
 	flex-direction: column;
-	border: 6px solid black;
+	border: 2px solid black;
 	border-top-left-radius: 20%;
 	border-top-right-radius: 20%;
 	border-bottom-left-radius: 20%;
@@ -182,11 +257,40 @@ body {
 
 }
 
-.brow {
-	height: 2px;
-	width: 80px;
-	background-color: black;
+.gamora {
+	margin-left: -129px;
+	margin-top: 21px;
+	position: absolute;
 }
+
+.head_gamora{
+	background: linear-gradient( to right,
+		var(--GamoraDkGreen),
+		var(--GamoraGreen)
+		);
+
+} 
+
+.nebula {
+	margin-right: -82px;
+	margin-top: -213px;
+	position: absolute;
+}
+
+.head_nebula {
+	background: linear-gradient(to right,  
+		var(--NebulaBlue),
+		var(--NebulaLightBlue),
+		var(--thanosSkin)
+		);
+}
+
+.nebula_purple{
+	height: 60px;
+	width: 30px;
+	background-color: var(--thanosSkin);
+}
+
 
 .eye_row {
 	display: flex;
@@ -196,27 +300,24 @@ body {
 }
 
 .eyes {
-	height: 40px;
-	width: 40px;
+	height: 20px;
+	width: 20px;
 	background-color: black;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-
-	border-top-left-radius: 50%;
-	border-top-right-radius: 10%;
+	border-radius: 50%;
 	margin-right: 10px;
 	margin-left: 10px;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+		border-top-left-radius: 45%;
+	border-top-right-radius: 40%;
+	border-bottom-left-radius: 30%;
+	border-bottom-right-radius: 30%;
+
 }
 
-.eyesR {
-	border-top-right-radius: 50%;
-	border-top-left-radius: 10%;
-
-}
 
 .pupil {
 	background-color: var(--offWhite);
@@ -225,28 +326,12 @@ body {
 	border-radius: 4%;
 }
 
-.chinGroup {
-	display: flex;
-	align-items: baseline;		
-	justify-content: space-evenly;
-	width: 100px;
-}
-
-.chinLine{
-	background-color: black;
-	height: 20px;
-	width: 4px;
-}  
-.endChin{
-	background-color: black;
-	height: 28px;
-	width: 4px;
-}
 
 .mouth{
-	height: 40px;
-	width: 80px;
-	background-color: black;
+	height: 20px;
+	width: 40px;
+	background-color: var(--GamoraDkGreen);
+	border:2px solid var(--GamoraDkGreen);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -257,15 +342,23 @@ body {
 	border-bottom-right-radius: 20%;
 }
 
-
+.mouthNebula{
+	background-color: var(--NebulaBlue);
+	border:2px solid var(--NebulaBlue);
+}
 .grin {
-    height: 12px;
-    width: 64px;
+    height: 90%;
+    width: 90%;
     border-radius: 20%;
 	background-color: var(--offWhite);
 	margin-top: 0px;
 }
 
+.brow {
+	height: 12px;
+	width: 6px;
+	background-color: var(--GamoraDkGreen);
+}
 
 
 .neckRow, .top{
@@ -279,34 +372,47 @@ body {
 }
 
 .headStud {
-	height: 20px;
-	width: 60px;
-	background-color: var(--thanosSkin);
-	border: 6px solid black;
+	height: 10px;
+	width: 30px;
+	background: linear-gradient(to right,  
+		var(--NebulaBlue),
+		var(--NebulaLightBlue)
+		);
+	border: 2px solid black;
 	border-bottom: 2px solid black;
 	border-top-left-radius: 20%;
 	border-top-right-radius: 20%;
 	border-bottom-left-radius: 20%;
 	border-bottom-right-radius: 20%;
-
+	margin-bottom: -10px;
 	position: absolute;
 }
 
+
 .neck{
-	height: 20px;
-	width: 60px;
-	background-color: var(--sweaterGold);
-	border: 6px solid black;
+	height: 10px;
+	width: 30px;
+	background: linear-gradient(to right,  
+		var(--NebulaBlue),
+		var(--NebulaLightBlue)
+		);
+	border: 2px solid black;
 	border-top: 2px solid black;
 	border-top-left-radius: 20%;
 	border-top-right-radius: 20%;
 	border-bottom-left-radius: 20%;
 	border-bottom-right-radius: 20%;
-	margin-top: 2px;
+	margin-top: -10px;
 
 	position: absolute;
 }
 
+.headStudGamora, .neckGamora{
+	background: linear-gradient( to right,
+		var(--GamoraDkGreen),
+		var(--GamoraGreen)
+		);
+}
 
 .spacerFoot{
 	height: 10px;
