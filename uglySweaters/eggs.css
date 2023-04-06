@@ -1,21 +1,23 @@
 :root {
 	--MainPurple: #7d3b74;  /*#3d8425; */
+	--DarkPurple: #1f1d21;
 	--Yellow: #ffd700;
 	--LgGreen: #00ff58;
 	--Blue: #0028ff;
 	--Pink: #ff00a7;
 	--Purple: #d700ff;
+	--Red: #ff0000f2;
 }
 
 body {
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
-	color: var(--MainPurple);
+	color: var(--Purple);
 }
 
 .main {
-	background: var(--MainPurple);
+	background: var(--DarkPurple);
 	height: 75%;
 	width: 90vw;
 	padding: 100px;
@@ -105,13 +107,13 @@ z-index: 99;
 .torso {
 	height: 75%;
 	width: 100%;
-	background: var(--MainPurple);
+	background: var(--DarkPurple);
 }
 
 
 .orangeStitch {
 	background-color: var(--LgGreen);
-	border: 2px dotted var(--Purple);
+	border: 2px dotted var(--DarkPurple);
 	height: 15px;
 	width: 10%;
 	display: flex;
@@ -121,7 +123,7 @@ z-index: 99;
 
 .whiteStitch {
 	background-color: var(--Blue);
-	border: 2px dotted var(--Purple);
+	border: 2px dotted var(--DarkPurple);
 	height: 15px;
 	width: 10%;
 	display: flex;
@@ -158,8 +160,8 @@ z-index: 99;
 
 	margin-left: 30px; 
 	margin-top: 10px;
-	 overflow: hidden;
-
+	overflow: hidden;
+	border: 2px var(--DarkPurple) solid;
 }
 
 .egg_purple {
@@ -168,7 +170,7 @@ linear-gradient(
       var(--Purple) 30%, 
       var(--Blue)
     );
-border: 2px var(--Purple) solid;
+border: 2px var(--DarkPurple) solid;
 
 }
 
@@ -178,354 +180,24 @@ radial-gradient(
       var(--Purple) 30%, 
       var(--Blue)
     );
-border: 2px var(--Purple) solid;
+border: 2px var(--DarkPurple) solid;
 
 }
 
-.egg_3color {
-  background: linear-gradient(to bottom right, var(--Pink), 
-		white, var(--Blue));
-  border-right: 2px var(--Blue) solid;
+.egg_layers {
+  background: linear-gradient(var(--Purple), var(--DarkPurple), var(--Pink), var(--Yellow));
 }
 
 
+/* Radial Gradient */
 
-/* ///// WINDOW PANE //// 
-
-.centerLine {
-	background-color: #000;
-	height: 3px;
-	width: 100%;
-	z-index: 0;
-	margin-top: 10px;
+.radial_basic {
+	background: radial-gradient(var(--Purple), var(--Pink), var(--Red));
 }
 
-.verticalLine {
-	background-color: #000;
-	height: 100%;
-	width: 6px;
-	margin-top: 0px;	
-	z-index: 0;
-}
-
-*/
-
-/* BLOCK HEAD ////////// */
-
-.blockHead {
-	height: 79px;
-	width: 72px;
-	background: black;
-	border-radius: 20%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 6px solid #000;
-	justify-content: space-between;
-	flex-direction: row;
-	flex-wrap: wrap;
-	z-index: auto;
-	position: absolute;
-	margin-top: -155px;
-	margin-right: 50px;  
-}
-
-.blockHeadBody {
-	height: 285px;
-	width: 145px;
-	background: black;
-
-	display: flex;
-	justify-content: center;
-	align-items: center; 
-	overflow: hidden;
-	border: 6px solid #000;
-	border-radius: 10%;
-	justify-content: space-between;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-top: 250px;
-	margin-right: 50px;
-	position:absolute;
-	  
-}
-
-.neck {
-	background-color: black;
-	height: 50px;
-	width: 50px;
-	margin-top: -20px;
-	margin-left: -50px;
-	position: absolute;
+.radial_basic_red {
+  background: linear-gradient(var(--Pink), var(--Yellow), var(--Purple), var(--DarkPurple));
 
 }
 
-.shoulder {
-	background-color: black;
-	height: 51px;
-	width: 27px;
-	margin-top: 15px;
-	margin-left: 120px;
-	position: absolute;
-	border-radius: 10%;
 
-}
-.arm {
-	background-color: black;
-	height: 200px;
-	width: 27px;
-	margin-top: 163px;
-	margin-left: 141px;
-	position: absolute;
-	border-radius: 10%;
-}
-
-.shoulderLeft {
-	background-color: black;
-	height: 51px;
-	width: 27px;
-	margin-top: 15px;
-	margin-left: -220px;
-	position: absolute;
-	border-radius: 10%;
-
-}
-.armLeft {
-	background-color: black;
-	height: 200px;
-	width: 27px;
-	margin-top: 163px;
-	margin-left: -241px;
-	position: absolute;
-	border-radius: 10%;
-}
-
-
-/* spider ////////// */
-
-.spider {
-	height: 125px;
-	width: 125px;
-	background: var(--Yellow);
-
-	display: flex;
-	align-items: center; 
-	border-top-right-radius: 50%;
-	border-top-left-radius: 50%;
-	border-bottom-right-radius: 54%;
-	border-bottom-left-radius: 54%; 
-	justify-content: space-between;
-	position: absolute;
-	
-}
-
-.spider2 {
-	height: 85px;
-    width: 85px;
-    background: var(--Pink);
-	display: flex;
-	align-items: center; 
-
-	border-top-right-radius: 50%;
-	border-top-left-radius: 50%;
-	border-bottom-right-radius: 54%;
-	border-bottom-left-radius: 54%; 
-	justify-content: space-between;
-	
-	position: absolute;  
-}
-
-
-/* //////// Vampire ////////// */
-
-.coffinCap {
-	border-bottom: 50px solid black;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	height: 0;
-	width: 125px;
-	position: absolute;
-	margin-top: 220px;
-}
-
-.vampHead{
-    background-color: black;
-    height: 60px;
-    width: 48px;
-    margin-top: -160px;
-    position: absolute;
-    border-radius: 45%;
-}
-
-.vcollar {
-	background-color: black;
-	height: 39px;
-	width: 4px;
-	position: absolute;
-	transform: rotate(120deg);
-	margin-right: 37px;
-	margin-bottom: 121px;
-}
-
-.vcollarRight {
-	background-color: black;
-	height: 39px;
-	width: 4px;
-	position: absolute;
-	transform: rotate(-120deg);
-	margin-right: -37px;
-	margin-bottom: 121px;
-}
-
-.vamp {
-	background-color: black;
-	height: 215px;
-	width: 85px;
-	border-radius: 25%;
-	position: absolute;
-	margin-top: 99px;
-}
-
- .vampbat {
- 	color: black;
- 	font-weight: bold;
- 	font-size: 3rem;
- 	position: absolute;
- 	margin-top: -290px;
- 	margin-right: 50px;
- }
-
-.vampbat2 {
- 	color: black;
- 	font-weight: bold;
- 	font-size: 3rem;
- 	position: absolute;
- 	margin-top: 90px;
- 	margin-right: 150px;
- }
- .vampbat3 {
- 	color: black;
- 	font-weight: bold;
- 	font-size: 3rem;
- 	position: absolute;
- 	margin-top: 90px;
- 	margin-right: -150px;
- }
-
-.coffinBottom {
-	border-top: 50px solid black;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	height: 0;
-	width: 125px;
-	position: absolute;
-	margin-top: 320px;
-}
-
-
-/* //////   Headless Woman */
-
-.hourglass {
-border-top: 125px solid #000;
-border-bottom: 195px solid #000;
-border-left: 40px solid transparent;
-border-right: 40px solid transparent;
-height: 0px;
-width: 45px;
-position: absolute;
-border-radius: 20%;
-margin-bottom: -155px;
-}
-
-
-.headlessArmLeft {
-	background-color: black;
-	height: 125px;
-	width: 20px;
-	margin-top: -163px;
-	margin-left: -200px;
-	position: absolute;
-	border-radius: 20%;
-	transform: rotate(120deg);
-}
-
-.headlessArmLeftElbow {
-	background-color: black;
-	height: 100px;
-	width: 20px;
-	margin-top: -233px;
-	margin-left: -127px;
-	position: absolute;
-	border-radius: 20%;
-	transform: rotate(-120deg);
-}
-
-.headlessHand{
-	background-color: black;
-	height: 16px;
-	width: 30px;
-	margin-top: -285px;
-	margin-left: -19px;
-	position: absolute;
-	border-radius: 18%;
-	transform: rotate(0deg);
-}
-
-.head{
-    background-color: black;
-    height: 60px;
-    width: 48px;
-    margin-top: -245px;
-    margin-left: 4px;
-    position: absolute;
-    border-radius: 45%;
-    transform: rotate(-23deg);
-}
-
-.headlessArmRight {
-	background-color: black;
-	height: 130px;
-	width: 20px;
-	margin-top: 11px;
-	margin-left: 100px;
-	position: absolute;
-	border-radius: 20%;
-}
-
-.headlessArmRightElbow {
-	background-color: black;
-	height: 55px;
-	width: 23px;
-	margin-top: 136px;
-	margin-left: 64px;
-	position: absolute;
-	transform: rotate(-120deg);
-	border-radius: 20%;
-}
-
-
-
-/*
-MESH Background with tint
-
-
-linear-gradient(
-      rgba(0, 0, 0, 0.75), 
-      rgba(0, 0, 0, 0.75)
-    ),
-     url(images/me tal-mesh-vector-26.jpg); 
-
-blackwidow hourglass
-https://www.w3schools.com/howto/howto_css_shapes.asp
-
-.trapezoid {
-border-top: 25px solid #555;
-	border-bottom: 25px solid #555;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	height: 0px;
-	width: 25px;
-}
-
-
-     */
