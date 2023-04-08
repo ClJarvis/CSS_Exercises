@@ -80,28 +80,28 @@ z-index: 99;
 }
 
 .batLeft {
-  transform: rotate(45deg);
+
   font-size: 1.5rem;
 }
 
 .batUp {
-  transform: rotate(-90deg);
+
   font-size: 2rem;
 }
 
 .batDown {
-  transform: rotate(90deg);
+
   font-size: 2rem;
 }
 
 .batRight {
-  transform: rotate(145deg);
+
   font-size: 1.5rem;
 }
 
 .eyes{
 	font-size: 2rem;
-	padding-top: 2px;
+
 }
 
 .torso {
@@ -184,20 +184,24 @@ border: 2px var(--DarkPurple) solid;
 
 }
 
-.egg_layers {
-  background: linear-gradient(var(--Purple), var(--DarkPurple), var(--Pink), var(--Yellow));
+
+
+/* Gradient */
+
+
+.sunset {
+  background: linear-gradient(var(--Pink), var(--Yellow), var(--Purple), var(--DarkPurple));
 }
-
-
-/* Radial Gradient */
-
 .radial_basic {
 	background: radial-gradient(var(--Purple), var(--Pink), var(--Red));
 }
 
-.radial_basic_red {
-  background: linear-gradient(var(--Pink), var(--Yellow), var(--Purple), var(--DarkPurple));
+.eggshape_gradient {
+  background: linear-gradient(to right, var(--Purple) 10% 20%, var(--DarkPurple) 30% 40%, var(--Pink) 50% 60%, var(--Yellow) 90%);
+}
 
+.sunset_reflection {
+  background: linear-gradient(var(--Purple), var(--DarkPurple), var(--Pink), var(--Yellow));
 }
 
 
