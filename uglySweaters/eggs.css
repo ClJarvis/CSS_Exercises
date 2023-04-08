@@ -211,9 +211,8 @@ border: 2px var(--DarkPurple) solid;
   	var(--Yellow), 
   	var(--Purple), 
   	var(--DarkPurple));
-
-
 }
+
 .egg_gradient_right {
  
   background: linear-gradient(to right,
@@ -221,8 +220,6 @@ border: 2px var(--DarkPurple) solid;
    var(--Yellow), 
    var(--Purple),
    var(--DarkPurple));
-
-
 }
 
 
@@ -244,7 +241,5 @@ border: 2px var(--DarkPurple) solid;
        var(--Yellow), 
        var(--Purple), 
        var(--DarkPurple));
-
-
 }
 
