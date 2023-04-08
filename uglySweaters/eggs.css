@@ -149,10 +149,8 @@ z-index: 99;
 		white );
 	height: 364px;
 	width: 225px;
-	border-top-right-radius: 51%;
-	border-top-left-radius: 51%;
-	border-bottom-left-radius: 40%;
-	border-bottom-right-radius: 40%;
+	aspect-ratio: 3 / 4;
+	border-radius: 100% / 125% 125% 80% 80%;
 	border: 2px var(--Pink) solid;
 	display: flex;
 	justify-content: center;
@@ -204,4 +202,49 @@ border: 2px var(--DarkPurple) solid;
   background: linear-gradient(var(--Purple), var(--DarkPurple), var(--Pink), var(--Yellow));
 }
 
+/* Blues */
+
+.egg_gradient_bottom {
+
+  background: linear-gradient(
+  	var(--Pink), 
+  	var(--Yellow), 
+  	var(--Purple), 
+  	var(--DarkPurple));
+
+
+}
+.egg_gradient_right {
+ 
+  background: linear-gradient(to right,
+   var(--Pink), 
+   var(--Yellow), 
+   var(--Purple),
+   var(--DarkPurple));
+
+
+}
+
+
+.egg_gradient_top {
+
+	background: 
+	linear-gradient(to top,
+       var(--Pink), 
+       var(--Yellow), 
+       var(--Purple), 
+       var(--DarkPurple));
+}
+
+.egg_gradient_left {
+	
+	background: 
+	linear-gradient(to left,
+       var(--Pink), 
+       var(--Yellow), 
+       var(--Purple), 
+       var(--DarkPurple));
+
+
+}
 
