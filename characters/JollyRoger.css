@@ -1,0 +1,154 @@
+:root {
+  --Black: #191919;
+  --White: #f0e4e4;
+  --Purple: #5d5080;
+  --Gray: #5c5470;
+  --MidGray: #352f44;
+  --DarkGray: #2a2438;
+  --DarkRed: #a42624;
+}
+
+.flex-container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #333;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Vert 300 H 600, Hort w 950 v 330 */
+
+.outer_frame {
+  width: 700px;
+  height: 350px;
+  border: 4px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: row;
+  background-color: var(--Black);
+}
+
+
+.subject {
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	position: absolute; 
+	overflow: visible;
+	margin-top: -70px;
+	flex-direction: column;
+  gap: 80px;
+/*	filter: drop-shadow(0 0 1.5rem white); */
+}
+
+  .skull {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+  filter: drop-shadow(0 0 0.95rem var(--DarkRed));
+  }
+ .upperskull {
+    width: 120px;
+    height: 100px;
+    background: var(--White);
+    border-radius: 60px 60px 15px 15px;
+  }
+
+.eyerow{
+  width:120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px;
+  margin-top: 45px;
+}
+  .eye {
+    width: 42px;
+    height: 32px;
+    border-radius: 50%;
+    background: #191919;
+  }
+
+  .jaw {
+    background: var(--White);
+    display: flex;
+    flex-direction: row;
+    width: 86px;
+    height: 30px;
+    border-radius: 6px 6px 92px 92px;
+    justify-content: center;
+    gap: 10px;  
+  }
+  .tooth {
+    width: 8px;
+    height: 12px;
+    background: var(--Black);
+    border-radius: 40%;
+    margin-top: 20px;
+  }
+  .nose {
+    height: 33px;
+    width: 15px;
+    border-radius: 40%;
+    background: var(--Black);
+    margin-top: -50px;
+  }
+  .crossbones{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+filter: drop-shadow(0 0 0.95rem var(--DarkRed));
+
+  }
+  .bones{
+    width: 150px;
+    height: 15px;
+    background: var(--White);
+    border-top-right-radius: 35%;
+    border-top-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    border-bottom-left-radius: 35%;
+    overflow: visible;
+
+  }
+  .endsL{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--White);
+    margin-right: 85px;
+    margin-top: -5px;
+  }
+    .endsR{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--White);
+    margin-left: 125px;
+    margin-top: -25px;
+  }
+  .left{
+    transform: rotate(33deg);
+
+  }
+  .right{
+    transform: rotate(-33deg);
+    margin-top: -9px;
+  }
+
