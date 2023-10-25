@@ -40,7 +40,7 @@
   border: 4px white solid; /* text #05f971 */
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: flex-end; 
   flex-direction: row;
   border-radius: 10% / 50%;
   background-color: #333;
@@ -53,10 +53,10 @@
 
 .subject {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	position: absolute; 
 	overflow: visible;
-	margin-top: 50px;  /* 0px for text */
+	margin-top: 0px;  /* 0px for text */
 	flex-direction: row;
   gap: 44px;
 /*	filter: drop-shadow(0 0 1.5rem white); */
