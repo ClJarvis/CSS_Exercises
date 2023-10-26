@@ -34,7 +34,7 @@
 
 /* Vert 300 H 600, Hort w 950 v 330 */
 
-.outer_frame {
+.screen_frame {
   width: 600px;
   height: 400px;
   border: 4px white solid; /* text #05f971 */
@@ -62,7 +62,7 @@
 /*	filter: drop-shadow(0 0 1.5rem white); */
 }
 
-.duck_body {
+.ghost_body {
   width: 167px;
   height: 220px;
   background: var(--White);
