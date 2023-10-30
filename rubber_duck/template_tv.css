@@ -19,6 +19,13 @@
   justify-content: center;
   align-items: center; 
   position: relative;
+
+  /*  background-image: url(wood-grain-texture-vector-40.png), linear-gradient(yellow, red); */
+
+
+
+
+
 }
 
 
@@ -45,9 +52,13 @@
   border-radius: 10% / 50%;
   background-color: #333;
 
-   /* background-image: url(texture.png); 
-  background-image: url(grain_pexels-photo-246211.jpeg);
+   background-image: linear-gradient(to right, black, var(--White), var(--Black)) ;
+  /*background-image: url(fish-net-14.png), radial-gradient(rgba(255, 204, 0, 0.01), rgb(253, 245, 192)); 
+
    */
+;
+
+
 }
 
 
@@ -93,8 +104,6 @@
   border-radius: 44%;
   background: var(--Black);
 }
-
-
 
 .mouth {
   width:  35px;
