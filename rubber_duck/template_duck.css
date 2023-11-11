@@ -60,7 +60,7 @@
   height: 160px;
   background: var(--Yellow);
   border: 2px solid var(--Black);
-  border-radius: 80% 80% 30% 30%;
+  border-radius: 80% 80% 40% 30%;
   margin-top: 25px;
   
   justify-content: center;
