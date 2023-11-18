@@ -1,14 +1,21 @@
 :root {
   --Black: #000;
   --White: #f0e4e4;
-  --Purple: #5d5080;
+  --Purple: #8b73cc;
   --Gray: #5c5470;
   --MidGray: #352f44;
   --DarkGray: #2a2438;
   --DarkRed: #a42624;
   --Yellow: #FFCC00;
   --Orange: #d55326;
-  --Water: #1e4886;;
+  --Water: #1e4886;
+  --barbiePink: #EC4399;
+  --barbieAccent: #F7B9D7;
+  --Brown: #462626;
+  --Tan: #997300;
+
+  --Blue: #0028ff;
+
 }
 
 
@@ -34,9 +41,9 @@
 
 
 .outer_frame {
-  width: 800px;
+  width: 85%;
   height: 400px;
-  border: 4px white solid;
+  border: 4px groove white;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -146,3 +153,108 @@
   margin-left: 5px;
 }
 
+/* ------ DARK MODE  ------------ */
+.darkmode{
+  background: var(--DarkGray);
+  border: 2px solid var(--White);
+}
+
+.duck_wing{
+  border-right-color: var(--DarkGray);
+}
+
+.duck_head {
+    border-left-color: var(--DarkGray);
+}
+
+
+/* ------ Barbie Mode ------- */
+
+.barbie_mode {
+  background: var(--barbiePink);
+  border: 2px solid var(--barbieAccent);
+
+}
+
+.duck _wing{
+  border-right-color: var(--barbiePink);
+}
+
+.duck _head {
+    border-left-color: var(--barbiePink);
+}
+
+.duck _bill{
+  width: 80px;
+  height: 27px;
+  background: #ED5C9B;
+  border: 2px solid var(--barbieAccent);
+}
+
+.barbie _line {
+  background: var(--barbieAccent);
+}
+
+/* ---- penguin   -------- */
+
+.penguin_mode{
+  background: 
+linear-gradient(
+      var(--Black) 45%,
+      var(--White)
+    );
+}
+
+.penguin_mode_wing{
+  background: 
+linear-gradient(to right,
+      var(--White) 33%,
+      var(--Black)
+    );
+}
+
+.penguin_mode_head{
+  background: 
+      var(--Black);
+}
+.penguin_bill{
+  width: 80px;
+  height: 27px;
+  background: linear-gradient(
+      var(--DarkGray) 30%,
+      var(--Orange)
+    );
+  border: 2px solid var(--Black);
+}
+
+/*  porg */
+
+.porg_mode{
+  background: 
+linear-gradient(
+      var(--Brown) 45%,
+      var(--White)
+    );
+}
+
+.porg_mode_wing{
+  background: var(--Brown);
+}
+
+.porg_mode_head{
+  background:linear-gradient(var(--Brown), var(--White));
+}
+
+.porg_eye {
+  width: 34px;
+  height: 34px;
+  background: var(--Black);
+  border-radius: 50%;
+  border: 1px solid var(--White);
+  margin-left: 51px;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(-8px -4px 3px var(--Tan));
+  }
