@@ -1,0 +1,208 @@
+:root {
+	--sweatergreen: #3d8425;
+	--SweaterDkGreen: #52621e;
+
+	--SweaterDarkRed: #611913;
+
+
+	--offWhite: #bdadad;
+
+}
+
+
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+.main {
+	background: rgb(0 0 0);
+	height: 75%;
+	width: 90vw;
+	padding: 100px;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.flex-container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* SWEATER SWEATER     ////// */
+
+ .sweater {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--SweaterDarkRed);
+    flex-direction: row;
+    overflow: hidden;
+
+}
+.collar, .base, .redzagtop, .redzagbttm, .toprow, .secndrow  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+.collar, .base {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+
+
+.stitch {
+	background-color: var(--SweaterDarkRed);
+	border: 4px dashed black;
+	border-right: 2px dashed black;
+	border-left: 2px dashed black;
+	height: 34px;
+	width: 9.09%;
+	padding: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+
+.torso {
+	height: 75%;
+	width: 100%;
+	background-image:
+        url(https://i.imgur.com/uYjnk8N.png),
+           url(https://i.imgur.com/iAGD6MA.png),
+           url(https://i.imgur.com/hIJDjbg.png);
+
+    display: grid;
+	justify-content: center;
+	align-items: ;
+}
+
+
+
+.InnerSweater {
+	width: 2000px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 50px;
+	column-gap: 40px;
+}
+
+.snowRow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 140px;
+	margin-top: 10px;
+}
+
+.snow{
+	height: 50px;
+	width: 50px;
+	border-radius: 0%;
+	background: white;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	filter: drop-shadow(4px 2px 1.5rem black);
+	
+}
+
+.line{
+	width: 70px;
+	height: 16px;
+	background: white;
+	position: absolute;
+}
+
+.hz {
+	margin-left: -10px;
+}
+.vrt{
+	transform: rotate(90deg);
+	margin-left: -10px;
+}
+.left{
+	width: 82px;
+	transform: rotate(45deg);
+	margin-left: -14px;
+
+}
+.right{
+	width: 82px;
+	transform: rotate(-45deg);
+	margin-left: -14px;
+}
+
+.spideyRow {
+	width: 100%;
+	height: 100%;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 40px;
+}
+
+.spidey{
+	height: 80px;
+	width: 80px;
+	background: red;
+	border: 4px solid var(--SweaterDarkRed);
+	border-radius: 20%;
+    display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.eyerow {
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 14px;
+	margin-top: -18px;
+
+
+}
+
+.eye{
+	width: 16px;
+	height: 30px;
+	background: white;
+	border: 4px solid var(--SweaterDarkRed);
+	border-top:  6px solid var(--SweaterDarkRed);
+	border-bottom: 8px solid var(--SweaterDarkRed);
+	border-top-right-radius: 40%;
+	border-top-left-radius: 40%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	transform: rotate(30deg);
+}
+
+.eyeLeft{
+	transform: rotate(-30deg);
+}
