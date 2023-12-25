@@ -30,10 +30,10 @@ body {
 }
 
 .flex-container > div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 /* SWEATER SWEATER     ////// */
@@ -44,9 +44,9 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: var(--sweaterblue);
-    flex-direction: row;
-    overflow: hidden;
+	background: var(--sweatergreen);
+	flex-direction: row;
+	overflow: hidden;
 
 }
 .collar, .base, .redzagtop, .redzagbttm, .toprow, .secndrow  {
@@ -72,10 +72,10 @@ body {
 
 
 .stitch {
-	background-color: var(--sweaterblue);
-	border: 4px dashed var(--NebulaLightBlue);
-	border-right: 2px dashed var(--NebulaLightBlue);
-	border-left: 2px dashed var(--NebulaLightBlue);
+	background-color: var(--sweatergreen);
+	border: 4px dashed var(--SweaterDkGreen);
+	border-right: 2px dashed var(--SweaterDkGreen);
+	border-left: 2px dashed var(--SweaterDkGreen);
 	height: 34px;
 	width: 9.09%;
 	padding: 2px;
@@ -88,11 +88,11 @@ body {
 .torso {
 	height: 75%;
 	width: 100%;
-	background-image:
+/*	background-image:
         url(https://i.imgur.com/uYjnk8N.png),
            url(https://i.imgur.com/iAGD6MA.png),
            url(https://i.imgur.com/hIJDjbg.png);
-
+*/
     display: grid;
 	justify-content: center;
 	align-items: ;
@@ -101,12 +101,12 @@ body {
 
 
 .InnerSweater {
-	width: 2000px;
+	width: 900px;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+	
 	gap: 50px;
 	column-gap: 40px;
 }
@@ -150,7 +150,7 @@ body {
 }
 
 .ribbon {
-	background: var(--sweaterblue);	
+	background: var(--sweatergreen);	
 }
 
 .hz {
@@ -174,20 +174,7 @@ body {
 
 /* hats */
 
-.hat_hz {
-	margin-top: -42px;
-	margin-left: -10px;
-	background: black;
-	height: 10px;
-}
-.hat_vrt{
-	transform: rotate(90deg);
-	margin-left: 14px;
-	margin-top: -62px;
-	background: black;
-	height: 48px;
-	width: 20px;
-}
+
 
 .hourglassRow {
 	width: 100%;
@@ -199,24 +186,17 @@ body {
 	gap: 80px;
 }
 
-.snowman{
-	width: 80px;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
 
-.hourglass{
+
+.redtree{
 	height: 0px;
-	width: 85px;
+	width: 0px;
 	background: transparent;
 	
-	border-top: 95px solid var(--SweaterRed);
-	border-bottom: 95px solid var(--SweaterRed);
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
+	border-top: 0px solid transparent;
+	border-bottom: 195px solid var(--SweaterRed);
+	border-left: 90px solid transparent;
+	border-right: 90px solid transparent;
 
 
 	border-radius: 20%;
@@ -228,12 +208,10 @@ body {
 .wrapper {
 	width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
 	justify-content: center;
 	align-items: center;
 	gap: 25px;
-	margin-top: -75px;
-
 
 }
 
@@ -243,7 +221,7 @@ body {
     flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	gap: 6px;
+	gap: 60px;
 
 }
 
@@ -253,21 +231,16 @@ body {
     flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 18px;
+	gap: 180px;
 
 }
 
-.flakes, .nose{
-	width: 6px;
-	height: 6px;
+.flakes {
+	width: 10px;
+	height: 10px;
 	background: white;
 }
 
-.nose{
-	background: var(--SweaterRed);
-	margin-top: -14px;
-	margin-left: 9px;
-}
 
 .tree_topper{
 	margin-left: -4px;
@@ -322,7 +295,7 @@ body {
 	width: 1px;
 	height: 1px;
 
-	border-bottom: 60px solid green;
+	border-bottom: 60px solid var(--SweaterDarkRed);
 	border-left: 30px solid transparent;
 	border-right: 30px solid transparent;
 	margin-top: 6px;
