@@ -134,25 +134,40 @@ body {
 
 
 .snowSpeeder {
-	height: 20px;
-	width: 80px;
+	
 	position: absolute;
-
-	border: 2px solid white;
-	margin-bottom: 200px;
+    margin-bottom: 20px;
 	margin-left: 20px;
+	border: 4px solid white;
+    width: 40px;
+    height: 20px;
+    transform: rotate(-114deg);
+	
 }
+
+.speeder_rear {
+	position: relative;
+    margin-bottom: 0px;
+	margin-left: -43px;
+	border: 4px dashed white;
+    width: 39px;
+    height: 14px;
+    transform: rotate(-114deg);
+  }
 
 .snowSpeeder_bottom {
-	height: 20px;
-	width: 80px;
-	position: absolute;
-	background: white;
-	margin-bottom: 200px;
-	margin-left: 20px;
+	width: 40px;
+	height: 30px;
+	position: relative;
+	background:white;
+
+	margin-top: -16px;
+	margin-left: 10px;
+    transform: rotate(-114deg);
+
 }
 
-.turrent{
+.turret{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -164,7 +179,7 @@ body {
 	
 }
 
-.cannon{
+.cannon_lid{
 	width: 80px;
 	height: 10px;
 	border:4px white solid;
@@ -184,7 +199,7 @@ body {
 	margin-left: 125px;
 }
 
-.turrent_base{
+.turret_base{
 	width: 30px;
 	height: 40px;
 	border: 4px white solid;
@@ -224,9 +239,6 @@ body {
 	align-items: center;
 	position: relative; 
 	position: absolute;
-	
-	/*background: red;
-	border: 4px green solid; */
 }
 
 .at-at_head{
