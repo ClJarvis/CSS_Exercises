@@ -5,7 +5,7 @@
 	--LgGreen: #00ff58;
 	--Blue: #0028ff;
 	--Pink: #ff00a7;
-	--Purple: #d700ff;
+	--Purple: #fdebd0; /* #ffebcd*/
 	--Red: #ff0000f2;
 }
 
@@ -241,5 +241,15 @@ border: 2px var(--DarkPurple) solid;
        var(--Yellow), 
        var(--Purple), 
        var(--DarkPurple));
+}
+
+/* REal Eggs   */
+
+.egg_white {
+	background:
+	linear-gradient(to bottom,
+		blanchedalmond, antiquewhite, beige, ghostwhite);
+	filter: drop-shadow(-3px 15px 7px #6b6b6b);
+	border-color: #6b6b6b;
 }
 
