@@ -7,6 +7,14 @@
 	--Pink: #ff00a7;
 	--Purple: #fdebd0; /* #ffebcd*/
 	--Red: #ff0000f2;
+	
+	--Bubbles: #e7feff;
+	--ItalianSkyBlue: #b2ffff;
+
+	--LightSalmonPink: #ff9999;
+	--LightSalmon: #ffa07a;
+	--Salmon: #fa8072;
+	--DarkSalmon: #e9967a;
 }
 
 body {
@@ -243,13 +251,40 @@ border: 2px var(--DarkPurple) solid;
        var(--DarkPurple));
 }
 
-/* REal Eggs   */
+/* Real Eggs   */
 
 .egg_white {
 	background:
 	linear-gradient(to bottom,
 		blanchedalmond, antiquewhite, beige, ghostwhite);
-	filter: drop-shadow(-3px 15px 7px #6b6b6b);
 	border-color: #6b6b6b;
+	  filter: drop-shadow(0 0 0.75rem #6b6b6b);
+  box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
 }
 
+.egg_brown {
+	background:
+	linear-gradient(to bottom,
+		blanchedalmond, wheat, burlywood, #c19a6b );
+	  filter: drop-shadow(0 0 0.75rem black);
+  box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+
+}
+
+.egg_blue {
+	background:
+	linear-gradient(to bottom,
+		lightcyan, var(--Bubbles), var(--ItalianSkyBlue), powderblue );
+	  filter: drop-shadow(0 0 0.75rem black);
+  box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+
+}
+
+.egg_salmon {
+    background:
+	linear-gradient(to bottom,
+		var(--LightSalmonPink), var(--LightSalmon), var(--DarkSalmon), var(--Salmon));
+	  filter: drop-shadow(0 0 0.75rem black);
+  box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+
+}
