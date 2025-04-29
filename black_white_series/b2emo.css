@@ -6,6 +6,7 @@
   --MidGray: #352f44;
   --DarkGray: #2a2438;
   --DarkRed: #a42624;
+  --DarkerRed: #681918;
 }
 
 
@@ -37,7 +38,7 @@
   justify-content: center;
   align-items: center; 
   flex-direction: row;
-  background-color: #333;
+  background-color: #462a2a;
 }
 
 
@@ -54,21 +55,25 @@
 }
 
 .plates {
-	background-color: var(--DarkRed);
+	background: linear-gradient( to right,
+	 var(--DarkRed), var(--Black));
 	height: 34px;
 	width: 200px;
 	border: 1px solid black;
 	border-radius: 4%;
+ 	box-shadow: inset -5px -5px 4px rgba(0,0,0,.5);	
 
 }
 
 .top {
-	border-bottom: 35px solid var(--DarkRed);
+	border-bottom: 35px solid var(--DarkerRed);
 	border-top: 40px solid transparent;
 	border-left: 40px solid transparent;
 	border-right: 40px solid transparent;
 		filter: drop-shadow(0 0 .5rem black);
  	border-radius: 4%;
+	box-shadow: inset -5px -5px 4px rgba(0,0,0,.5);	
+
 }
 
 .semicircle {
@@ -81,6 +86,8 @@
 
 	position: relative;
 	z-index: 3;
+	box-shadow: inset 3px 4px 4px rgba(0,0,0,.5);	
+
 }
 
 .ringaroundeye {
@@ -93,6 +100,8 @@
 	margin-top: -10px;
 	position: relative;
 	z-index: 7;
+	box-shadow: inset -2px -2px 2px rgba(0,0,0,.5);	
+
 }
 
 .eye {
@@ -126,10 +135,12 @@
 		height: 36px;
 		width: 160px;
 		border-bottom: 2px solid var(--DarkGray);
-		border-right: 1px solid var(--DarkGray);
-		border-left: 1px solid var(--DarkGray);
+		border-right: 5px solid var(--Black);
+		border-left: 5px solid var(--Black);
 		margin-left: 20px;
 		z-index: 11;
+		box-shadow: inset 3px -5px 2px rgba(0,0,0,.5);	
+
 	}
 
 		.inside2 {
@@ -141,6 +152,11 @@
 		width: 160px;
 		border: 2px solid var(--DarkGray);
 		margin-left: 20px;
+    	box-shadow: inset 5px 5px 7px rgba(0,0,0,.5);
+
+    	border-right: 5px solid var(--Black);
+		border-left: 5px solid var(--Black);	
+
 	}
 
 	.bottom{
@@ -150,24 +166,29 @@
 	}
 
 	.footR {
-	background-color: var(--DarkRed);
+	background: linear-gradient( to bottom,
+	 var(--DarkRed) 60%, var(--Black)) ;
 	height: 40px;
 	width: 40px;
 	border: 2px solid black;
-	margin-left: -6px;
+	margin-left: -15px;
 	margin-top: -8px;
 	border-radius: 4%;
-
+	border-top-right-radius: 25%;
+	border-top-left-radius: 25%;
 }
 
 	.footL {
-	background-color: var(--DarkRed);
+	background: linear-gradient( to bottom,
+	 var(--DarkRed) 60%, var(--Black));
 	height: 40px;
 	width: 40px;
 	border: 2px solid black;
-	margin-left: 156px;
+	margin-left: 165px;
 	margin-top: -43px;
 	border-radius: 4%;
+	border-top-right-radius: 25%;
+	border-top-left-radius: 25%;
 }
 
 .name {
