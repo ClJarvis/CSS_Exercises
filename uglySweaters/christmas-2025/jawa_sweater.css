@@ -145,9 +145,33 @@ body {
 
 .BD-72_head {
 	width: 100px;
-	height: 30px;
+	height: 25px;
 	background-color: var(--sweatergreen);
 	border: 4px solid white;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.antenna_wrapper{
+   width: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.antenna {
+	width: 6px;
+	height: 18px;
+	background-color: white;
+}
+
+.eyes {
+	width: 12px;
+	height: 12px;
+	background-color: var(--SweaterDarkRed);
 }
 
 .BD-72_neck, .BD-72_leg {
@@ -157,11 +181,19 @@ body {
 }
 
 .BD-72_body {
-	width: 110px;
+	width: 80px;
 	height: 90px;
 	background-color: var(--sweatergreen);
 	border: 4px groove white;
 	border-radius: 4%;
+	display: flex;
+	justify-content: center;
+}
+
+.RedLights{
+	width: 70px;
+	height: 10px;
+	background-color: var(--SweaterDarkRed);
 }
 
 .BD-72_leg_container {
@@ -187,10 +219,88 @@ body {
 	border: 4px solid white;
 }
 
-.Gonk {
-	width: 200px;
-	height: 250px;
+.Gonk_body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.Gonk_section1 {
+	width: 150px;
+	height: 50px;
 	background-color: var(--sweatergreen);
 	border: 4px solid white;
+	border-bottom-color: transparent;
+	border-radius: 5%;
+	margin-top: -272px;
+	position: absolute;
 
+}
+.Gonk_section2 {
+	width: 180px;
+	height: 50px;
+	background-color: var(--sweatergreen);
+	border: 4px solid white;
+	border-bottom-color: transparent;
+	border-radius: 5%;
+
+
+}
+.Gonk_section3 {
+	width: 200px;
+	height: 16px;
+	background-color: var(--sweatergreen);
+	border: 4px solid white;
+	border-radius: 5%;
+
+}
+
+.Button{
+	height: 40px;
+	width: 60px;
+	background-color: var(--SweaterDarkRed);
+	margin-top: 4px;
+	margin-left: 5px;
+}
+
+.Gonk_section4 {
+	width: 180px;
+	height: 50px;
+	background-color: var(--sweatergreen);
+	border: 4px solid white;
+	border-bottom-color: white;
+	border-top-color: transparent;
+	border-radius: 5%;
+
+	display: flex;
+	justify-content: flex-start;
+
+}
+.Gonk_section5 {
+	width: 150px;
+	height: 50px;
+	background-color: var(--sweatergreen);
+	border: 4px solid white;
+	border-top-color: transparent;
+	border-radius: 5%;
+
+	margin-top: -5px;
+
+}
+
+.Gonk_feet_container {
+	width: 130px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.Gonk_foot {
+	width: 60px;
+	height: 26px;
+	background-color: var(--sweatergreen);
+	border: 4px solid white;
 }
